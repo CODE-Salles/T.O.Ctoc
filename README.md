@@ -22,7 +22,7 @@
 
 #### Scrum Master:
 
-* [Gabriel Salles]().
+* [Gabriel Salles]()
 
 #### Links Úteis:
 
