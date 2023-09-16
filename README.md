@@ -1,8 +1,8 @@
-# **Trainee 2023.1**
+# **Trainee 2023.2**
 
-# **Nome do seu blog**
+# **T.O.C toc**
 
-## **Projeto Trainee, Code Jr, Grupo 000, 2023.1**
+## **Projeto Trainee, Code Jr, Grupo 1, 2023.2**
 
 | **Sumário** |
 |-------------|
@@ -13,21 +13,22 @@
 
 #### Desenvolvedores:
 
-* Trainee 1
-* Trainee 2
-* Trainee 3
-* Trainee 4
+* Saulo Surerus
+* Pedro Muniz
+* Felipe Gotelip
+* Carlos Eduardo
+* Daniel Thielmann
 
 
 #### Scrum Master:
 
-* [Nome do Scrum](coloque o link do github, se quiser).
+* [Gabriel Salles](coloque o link do github, se quiser).
 
 #### Links Úteis:
 
-* [Trello]()
+* [Trello](https://trello.com/invite/b/CIo3a4EF/ATTI3402f695d95ad4b64f1bdb44e1f5a3a0D37DC659/toc-toc)
 
-* [Drive com ID Visual]()
+* [Drive com ID Visual](https://drive.google.com/drive/folders/1C8C9j1Ts9k4tf48i5bSoX3PG9Z6w6b8H?usp=sharing)
 
 
 
