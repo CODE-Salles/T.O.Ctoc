@@ -22,7 +22,7 @@
 
 #### Scrum Master:
 
-* [Gabriel Salles](coloque o link do github, se quiser).
+* [Gabriel Salles]().
 
 #### Links Úteis:
 
@@ -34,7 +34,7 @@
 
 ## Descrição do Projeto:
 
-* Blog / Sistema de treinamento e capacitação dos Trainees da [CodeJR](https://codejr.com.br/), na gestão 2023.1;
+* Blog / Sistema de treinamento e capacitação dos Trainees da [CodeJR](https://codejr.com.br/), na gestão 2023.2;
 * Possuirá Front-End em HTML, CSS, JavaScript, Bootstrap e Back-End em PHP (puro) no padrão MVC, com Banco de Dados MySQL;
 
 
