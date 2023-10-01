@@ -27,7 +27,14 @@ body{
     padding: 0 4em;
 }
 
-.navbar-menu{
+.navbar-sticky{
+    position: fixed;
+    top:0;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar-menu,.searchbox-menu{
     display: none;
 }
 
@@ -70,6 +77,7 @@ body{
     align-items: center;
     justify-content: center;
 
+
     width: 100px;
     height: 100px;
     
@@ -93,7 +101,8 @@ body{
     height: 100px;
     border-radius: 50%;
     z-index: -1;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.52);
+    
 
 }
 
@@ -238,7 +247,7 @@ body{
 
 
 .fakecontent{
-    height: 100vh;
+    height: 80vh;
 
 
 }
@@ -300,23 +309,40 @@ body{
         padding: 0;
         gap: 0;
     }
-    .navbar{
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.52);
 
+    .navbar{
+        justify-content: center;
     }
 
-    .navbar-links,.searchbox-input{
+    .navbar-links,.searchbox-form{
         display: none;
     }
 
-    .searchbox-input{
+    .active{
+        display: block;
+    }
+
+    .searchbox-form{
+        justify-content: center;
         position: absolute;
-        top: 185px;
-        left: 0;
+        background-color: #fe5000;
+
         width: 100%;
-        border: 10px solid #000000;
-        border-radius: 0;
-        padding: 1em;
+        top: 55px;
+        left: 0px;
+        height: 70px;
+
+        padding: 1em 0;
+    }
+
+    .searchbox{
+        justify-content: center;
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .searchbox-input{
+        width: 100%;
     }
 
     .navbar-links{
@@ -349,20 +375,21 @@ body{
         height: 80px;
     }
 
-    .navbar-menu{
+    .navbar-menu,.searchbox-menu{
         display: flex;
         justify-content: center;
         width: 30%;
         height: 36px;
     }
 
-    .navbar-menu-button{
+
+    .navbar-menu-button,.searchbox-menu-button{
         background-color: black;
         color: white;
         padding: 0 1em;
     }
 
-    .navbar-menu-button, .searchbox-button{
+    .navbar-menu-button, .searchbox-menu-button{
         border-radius: 4px;
     }
 

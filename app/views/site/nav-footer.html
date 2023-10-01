@@ -16,14 +16,14 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
 
             <div class="navbar-menu">
-                <button class="navbar-menu-button">
+                <button class="navbar-menu-button" id="navbar-menu-button" onclick="openMenu('navbar-links')">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
-            <div class="navbar-links">
+            <div class="navbar-links" id="navbar-links">
                 <a href="" class="navbar-link">
                     <div class="navbar-link-icon"></div>
                     <div class="navbar-link-text">Todos os Posts</div>
@@ -39,17 +39,24 @@
                 <div class="navbar-logo-shadow"></div>
             </a>
 
-            <form class="searchbox-form" method="post">
+            <div class="searchbox-menu">
+                <button class="searchbox-menu-button" id="searchbox-menu-button" onclick="openMenu('searchbox-form')">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <form class="searchbox-form" id="searchbox-form" method="post">
                 <div class="searchbox">
-                    <button class="searchbox-button">
+                    <button class="searchbox-button" onclick="">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                     <input class="searchbox-input" type="search" placeholder="Pesquise por um post..." />
                 </div>
             </form>
-
         </nav>
     </header>
+
+
 
     <main class="fakecontent">
         <div>
@@ -106,6 +113,7 @@
 
     </footer>
 
+    <script src="navbar.js"></script>
     <script src="https://kit.fontawesome.com/5d993ad3fb.js" crossorigin="anonymous"></script>
 </body>
 
