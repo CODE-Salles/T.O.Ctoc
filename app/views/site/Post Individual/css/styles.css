@@ -1,0 +1,88 @@
+
+body {
+    margin-top: 100px;
+    background-color: black;
+    text-align: center;
+    background-image: url(../img/Formas.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Orbitron', sans-serif;
+
+}
+.exemplo{
+    border-left: 37.077px solid rgba(254, 80, 0, 0.60);
+    border-top-left-radius:30px ;
+    border-bottom-left-radius: 30px;
+
+}
+
+.barralateral{
+    width: 37.077px;
+    height: 450vh;
+    flex-shrink: 0;
+    border-radius: 30px 0px 0px 30px;
+    background: rgba(254, 80, 0, 0.60);
+    display: inline-block;
+    
+}
+
+.direita{
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    width: 70%;
+}
+
+.titulos h1{
+    color: white;
+    font-size: 56px;
+
+}
+
+.titulos h2{
+    color: white;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 50px;
+
+}
+
+.titulos h3{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.titulos img{
+    width: 70%;
+
+}
+
+.texto h3 {
+    font-size: 24px;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    text-align: justify;
+    line-height: 40px;
+    font-weight: 200;
+}
+.texto p{
+    margin-bottom: 50px;
+
+}
+
+@media (max-width:1123px){
+
+.direita {
+    width: 90%;
+}
+.barralateral{
+    display: none;
+}
+
+}
