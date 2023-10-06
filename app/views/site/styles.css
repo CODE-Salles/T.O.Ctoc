@@ -68,13 +68,16 @@ div {
     background-color: hwb(0 90% 100%);
     border-radius: 12px;
     width: 47%;
+    height: 6vh;
 }
 .dados1 input{
     color: rgba(0, 0, 0, 0.50);
     border: none;
     background: none;
     outline: none;
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: 2%;
+    width: 90%;
     font-family: 'Amethysta', serif;
 }
 .dados1 input::placeholder{
@@ -90,13 +93,16 @@ div {
     background-color: hwb(0 90% 100%);
     border-radius: 12px;
     width: 47%;
+    height: 6vh;
 }
 .dados2 input{
     color: rgba(0, 0, 0, 0.50);
     border: none;
     background: none;
     outline: none;
-    font-size: 24px;
+    margin-top: 2%;
+    font-size: 20px;
+    width: 90%;
     font-family: 'Amethysta', serif;
 }
 .dados2 input::placeholder{
@@ -184,7 +190,7 @@ div {
     margin-left: 48%;
 }
 .dados1 input{
-    font-size: 20px;
+    font-size: 16px;
     
 }
 
@@ -196,7 +202,7 @@ div {
     margin-left: 48%;
 }
 .dados2 input{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .senha{
