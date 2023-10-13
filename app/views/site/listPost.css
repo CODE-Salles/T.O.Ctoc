@@ -28,10 +28,13 @@ body {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
   border-radius: 4px;
   position: static;
-  font-weight: bold;
+  font-weight: 300;
+  background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 68%);
+  color: white;
 }
 
 .post {
+  color: white;
   background-color: #fe5000;
   border: 2px solid black;
   padding: 20px;
@@ -40,7 +43,8 @@ body {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
   border-radius: 4px;
   margin: 10px;
-  font-weight: bold;
+  font-weight: 300;
+  background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 68%);
 }
 
 .imagemPrincipal {
@@ -51,6 +55,7 @@ body {
 }
 
 .postPrincipal h2{
+  color: black;
   background-color: white;
   width: 65%;
   text-align: center;
@@ -70,6 +75,7 @@ body {
 
 
 #postList h2 {
+  color: black;
   background-color: white;
   text-align: center;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
