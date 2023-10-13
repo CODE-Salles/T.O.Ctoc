@@ -1,9 +1,17 @@
-body {
+html, body {
+    height: 100%;
+    margin: 0;
     font-family: 'Amethysta';
-    margin: 36px;
-    background-color: #1B1B1B;
     font-size: 18px;
     font-weight: bold;
+    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 60%);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    height: 100%; 
+    align-items: center; 
 }
 
 main {
@@ -27,13 +35,13 @@ main {
 #BoxCadastro input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px; /* Ajuste a margem conforme necessário para o espaçamento desejado */
+    margin-bottom: 15px; 
     box-sizing: border-box;
 }
 
 #BoxCadastro label {
     display: flex;
-    margin-bottom: 15px; /* Ajuste a margem conforme necessário para o espaçamento desejado */
+    margin-bottom: 25px; 
 }
 
 #BoxMenor {
