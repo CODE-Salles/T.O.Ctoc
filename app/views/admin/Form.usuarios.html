@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="form de usuarios">
+  <meta name="author" content="Daniel Alves Thielmann">
+  <title>Formulários de Cadastro e Exclusão de Usuário</title>
+  <link rel="stylesheet" href="Form.usuarios.css">
+</head>
+
+<body>
+  <main>
+    <section id="BoxCadastro">
+      <form id="cadastroUsuarioForm" action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <section id="BoxMenor">
+      <form id="exclusaoUsuarioForm" action="#" method="post">
+        <input type="checkbox" id="confirmacaoExclusao" name="confirmacaoExclusao" required>
+        <label for="confirmacaoExclusao">Confirmar exclusão:</label><br>
+        <button type="submit">Excluir Usuário</button>
+      </form>
+    </section>
+
+    <section id="BoxMenor">
+      <form id="edicaoUsuarioForm" action="#" method="post">
+        <input type="checkbox" id="confirmacaoEdicao" name="confirmacaoEdicao" required>
+        <label for="confirmacaoEdicao">Confirmar edição:</label><br>
+        <button type="submit">Editar Usuário</button>
+      </form>
+    </section>
+
+  </main>
+</body>
+
+</html>

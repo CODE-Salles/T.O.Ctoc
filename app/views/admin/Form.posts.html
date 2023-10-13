@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="form de posts">
+  <meta name="author" content="Daniel Alves Thielmann">
+  <title>Formulário de Posts</title>
+  <link rel="stylesheet" href="Form.posts.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Formulário de Posts</h1>
+    <form id="postForm">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required>
+
+      <label for="conteudo">Conteúdo:</label>
+      <textarea id="conteudo" name="conteudo" rows="8" required></textarea>
+
+      <label for="imagem">Imagem URL:</label>
+      <input type="url" id="imagem" name="imagem">
+
+      <label for="data">Data de Criação:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="autor">Autor (Usuário):</label>
+      <input type="text" id="autor" name="autor" required>
+
+      <button type="submit" id="btnAdicionar">Adicionar</button>
+      <button type="submit" id="btnAdicionar">Excluir</button>
+    </form>
+
+    <input type="checkbox" id="confirmacaoRemocao" name="confirmacaoRemocao" required>
+    <label for="confirmacaoRemocao" class="confirmacao-label">Realmente deseja excluir post</label><br>
+
+  
+      </div>
+    </div>
+  </div>
+</body>
+</html>

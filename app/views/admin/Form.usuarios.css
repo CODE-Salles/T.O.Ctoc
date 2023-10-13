@@ -1,0 +1,78 @@
+body {
+    font-family: 'Amethysta';
+    margin: 36px;
+    background-color: #1B1B1B;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+#BoxCadastro {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#BoxCadastro input[type="text"],
+#BoxCadastro input[type="email"],
+#BoxCadastro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Ajuste a margem conforme necessário para o espaçamento desejado */
+    box-sizing: border-box;
+}
+
+#BoxCadastro label {
+    display: flex;
+    margin-bottom: 15px; /* Ajuste a margem conforme necessário para o espaçamento desejado */
+}
+
+#BoxMenor {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fe5000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+#confirmacaoExclusao {
+    display: inline;
+    position: relative;
+    z-index: 1; 
+    float: right;
+    margin-right: 120px;
+    margin-top: 4.5px;
+}
+
+#confirmacaoEdicao {
+    display: inline;
+    position: relative;
+    z-index: 1; 
+    float: right;
+    margin-right: 135px;
+    margin-top: 4.5px;
+}
+
