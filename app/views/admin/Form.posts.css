@@ -4,11 +4,7 @@ html, body {
     font-family: 'Amethysta';
     font-size: 18px;
     font-weight: 300;
-}
-
-body {
-    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 60%);
-    color: white; 
+    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 75%);
 }
 
 .container {
