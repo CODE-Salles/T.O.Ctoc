@@ -7,6 +7,6 @@ function openSidebar(){
     links.classList.toggle('sidebar-links-active');
 
     for(i=0; i<3; i++){
-       contents[i].classList.toggle('sidebar-link-content-active')
+       contents[i].classList.toggle('sidebar-link-content-active');
     }
 }
