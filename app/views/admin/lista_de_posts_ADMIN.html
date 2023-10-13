@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Lista de Posts ADMIN</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </head>
+
+    <body>
+
+        
+        <div class="titulos">
+            <h1>Lista de Posts</h1>
+
+        </div>
+
+        
+        <table id="cabecalho" class="cabecalho">
+
+            <thead>
+                <tr>
+                    <th colspan="4"><button id="btnnovopost" onclick="openNovoPost()"> <h1> + Novo Post</h1></button></th>
+
+                </tr>
+                <tr>
+                    <th>Post</th>
+                    <th colspan="3">Ação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td width="70%" class="Posts">Nome do Post</td>
+                    <td width="10%"><button id="btnvizualizar" onclick="openVizualizar()"><img src="img/Vizualizar.png"></button></td>
+                    <td width="10%"><button id="btneditar" onclick="openEditar()"><img src="img/Editar.png"></button></td>
+                    <td width="10%"><button id="btnexcluir" onclick="openExcluir()"><img src="img/Excluir.png"></button></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div id="Excluir" class="ExcluirFechado">
+
+            <h1>Você tem certeza que deseja excluir este post?</h1>
+
+            <h3>Nome do Post</h3>
+
+            <div class="SimNão">
+                <ul>
+                    <li><button class="Sim" id="btsim" onclick="openSim()">Sim</button></li>
+                    <li><button class="Não" id="btnao" onclick="openNao()">Não</button></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    margin-top: 100px;
+    background-color: black;
+    text-align: center;
+    background-image: url(../img/Fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.titulos{
+    color: white;
+}
+
+.cabecalho{
+    margin: auto;
+    width: 90%;
+    color: white;
+    margin-top: 100px;
+    font-size: 28px;
+}
+
+thead{
+    background-color: #FE5000;
+}
+tbody td{
+    border-bottom: 2px solid #FE5000;
+}
+
+#btnvizualizar{
+    background-color: transparent;
+    border:transparent;
+}
+
+#btneditar{
+    background-color: transparent;
+    border:transparent;
+}
+
+#btnexcluir{
+    background-color: transparent;
+    border:transparent;
+}
+
+#btnnovopost{
+    background-color: transparent;
+    border:transparent;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+
+
+
+
+.ExcluirFechado{
+    display: none;
+}
+
+.ExcluirAberto{
+    position: fixed;
+    text-align: center;
+    top: 25%;
+    left: 25%; 
+    right: 25%;
+    bottom: 25%;
+    width: 97vh;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+}
+
+.ExcluirAberto h3{
+    padding-top: 15%;
+    font-size: 32px;
+}
+
+.SimNão{    
+    width: 97vh;
+    position:absolute;
+    bottom: 5%;
+    margin: 0px;
+}
+
+.SimNão ul{    
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.SimNão li{
+
+    font-size: 36px;
+    display: inline-block;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.Sim{
+    font-size: 45px;
+    color: #009a44;
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+    border:transparent;
+}
+
+.Não{
+    font-size: 45px;
+    color: #b60c2f;
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+    border:transparent;
+}
