@@ -1,6 +1,8 @@
 window.onscroll = function() {navBarClassChange()};
 
 var navbar = document.getElementById("navbar");
+var navbar_logo = document.getElementById("navbar-logo");
+var footer = document.getElementById("footerbar");
 
 var navbar_sticky = navbar.offsetTop;
 
@@ -35,4 +37,25 @@ function openMenu(element) {
     console.log(menu.classList)
     menu.classList.toggle('active');
     
+}
+
+function changePageColor(layout){
+  switch(layout){
+    case 'green':
+      navbar.classList = 'navbar navbar-g';  
+      footer.classList = 'footerbar footerbar-g';  
+      navbar_logo.style.backgroundColor = 'var(--verde)';
+      break;
+    case 'orange':
+      navbar.classList = 'navbar';  
+      footer.classList = 'footerbar';  
+      navbar_logo.style.backgroundColor = 'var(--laranja)';  
+      break;
+    case 'yellow':
+      navbar.classList = 'navbar navbar-y';  
+      footer.classList = 'footerbar footerbar-y';  
+      navbar_logo.style.backgroundColor = 'var(--amarelo)';
+      break;
+    default:
+  }
 }
