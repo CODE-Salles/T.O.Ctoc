@@ -1,9 +1,14 @@
-body {
+html, body {
+    height: 100%; /* Define a altura do html e body como 100% */
+    margin: 0; /* Remove as margens padrão */
     font-family: 'Amethysta';
-    margin: 36px;
-    background-color: #1B1B1B;
     font-size: 18px;
     font-weight: bold;
+}
+
+body {
+    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 60%);
+    color: white; /* Define a cor do texto */
 }
 
 .container {
@@ -14,12 +19,14 @@ body {
 h1 {
     text-align: center;
     color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52); 
 }
 
 form {
     display: flex;
     flex-direction: column;
-    color: white;
 }
 
 form label {
@@ -42,70 +49,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #fe5000;
-}
-
-#posts {
-    margin-top: 20px;
-}
-
-.post {
-    background-color: #fe5000;
-    border: 2px solid black;
-    padding: 20px;
-    width: 25%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
-    border-radius: 4px;
-    margin: 10px;
-    font-weight: bold;
-}
-
-.post img {
-    max-width: 100%;
-}
-
-.post .actions {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 60px;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.confirmacao-label {
-    color: white; /* Altere para a cor desejada */
+    background-color: green;
 }
