@@ -78,6 +78,9 @@ body{
 
 
 @media only screen and (max-width: 767px) {
+    .sidebar-button{
+        border-bottom: none;
+    }
     .sidebar-links{
         height: 0;
         overflow: hidden;
@@ -86,6 +89,10 @@ body{
 
     .sidebar-links-active{
         transition: 0.5s;
-        height: 100%;
+        height: 160px;
+    }
+
+    .sidebar-button-active{
+        border-bottom: 1px solid gray;
     }
 }
