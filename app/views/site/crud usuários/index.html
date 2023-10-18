@@ -30,10 +30,8 @@
         <table id="tableClient" class="records">
             <thead>
                 <tr>
-                    <th>Username</th>
-                    <th>Email</th>
                     <th>Nome</th>
-                    <th>Senha</th>
+                    <th>Email</th>
                     <th>Ação</th>
                 </tr>
             </thead>
@@ -44,15 +42,12 @@
         <div class="modal" id="modal">
             <div class="modal-content">
                 <header class="modal-header">
-                    <h2>Novo Cliente</h2>
+                    <h2>Novo Usuário</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form id="form" class="modal-form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="username"
-                        required>
-                    <input type="email" id="email" class="modal-field" placeholder="e-mail do usuário" required>
-                    <input type="text" id="celular" class="modal-field" placeholder="nome do usuário" required>
-                    <input type="text" id="cidade" class="modal-field" placeholder="senha do usuário" required>
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="nome" required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail" required>
                 </form>
                 <footer class="modal-footer">
                     <button id="salvar" class="button green">Salvar</button>
