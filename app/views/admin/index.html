@@ -19,16 +19,26 @@
     <div class="modal" id="modal">
         <div class="modal-content">
             <div class="modal-head">
-                <h2>Modal aberto</h2>
-                <span class="close">&times</span>
+                <h2>Modal de Criação de Usuários</h2>
+                <span class="close">&times;</span>
             </div>
             <div class="content-body">
-                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries forpreviewing layouts and visual mockups.</p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
                 <button class="save">Salvar</button>
             </div>
         </div>
     </div>
+
     <script src="js.js"></script>
 
 </body>
+
 </html>
