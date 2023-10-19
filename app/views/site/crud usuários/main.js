@@ -14,6 +14,14 @@
  showUser.addEventListener('click', () => {manageModal('showUser')});
  deleteUser.addEventListener('click', () => {manageModal('deleteUser')});
 
+ function closeModals(){
+    let modalElements = document.querySelectorAll('[id^="modal-"]');
+
+    modalElements.forEach(element => {
+        element.classList = 'modal-content';
+      });
+}
+
  modalClose.forEach(element => {
     element.addEventListener('click', () => {
         manageModal('close');
@@ -22,13 +30,6 @@
  })
 
 
-function closeModals(){
-    let modalElements = document.querySelectorAll('[id^="modal-"]');
-
-    modalElements.forEach(element => {
-        element.classList = 'modal-content';
-      });
-}
 
  function manageModal(typeModal){
     modalBox.classList.toggle('active')
