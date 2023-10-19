@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&family=Oswald:wght@200&display=swap');
+
 body {
-  font-family: 'Amethysta';
+  font-family: 'Orbitron';
   margin: 36px;
   background-color: #1B1B1B;
   font-size: 18px;
@@ -28,7 +30,6 @@ body {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
   border-radius: 4px;
   position: static;
-  font-weight: 300;
   background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
   color: white;
 }
@@ -43,7 +44,6 @@ body {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
   border-radius: 4px;
   margin: 10px;
-  font-weight: 300;
   background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
 }
 
@@ -63,7 +63,6 @@ body {
   border-radius: 4px;
   margin: 25px auto;
   padding: 5px;
-  font-weight: bold;
 }
 
 .postSection {
@@ -82,7 +81,6 @@ body {
   border-radius: 4px;
   padding: 5px;
   width: 97%;
-  font-weight: bold;
 }
 
 .imagemPadrao{
@@ -94,7 +92,7 @@ body {
 
 .imagemThinkOutside{
   width: 1600px;
-  height: 400px;
+  height: 600px;
   opacity: 0.35;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
   border-radius: 4px;
@@ -108,16 +106,16 @@ body {
 }
 
 .container h1 {
-  font-family: 'Montserrat';
-  font-size: 40px;
+  font-family: 'Orbitron';
+  font-size: 48px;
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1; 
   color: white; 
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.52);
   border-radius: 4px;
-  -webkit-text-stroke: 3px black; 
+  -webkit-text-stroke: 1px black; 
   font-weight: bold;
 }
