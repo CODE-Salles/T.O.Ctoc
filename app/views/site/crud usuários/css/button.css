@@ -14,9 +14,11 @@
     background-color: red;
 }
 .button.blue{
-    position: absolute;
-    margin-left: 35%;
     background-color: #ffffff;
+}
+
+button.yellow{
+    background-color: yellow;
 }
 
 button.green{

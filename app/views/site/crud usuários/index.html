@@ -25,9 +25,17 @@
         <img src="img/logo.png" alt="Logo">
     </header>
     <main>
-       <div class="cubo"> <img src="img/cubo.png" alt="Logo"> </div>
-        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Usuário</button>
+        <div class="newUserBox">
+
+            <img src="img/cubo.png" class="cubo" alt="Logo"> 
+            
+            <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Usuário</button>
+
+        </div>
+
+
         <table id="tableClient" class="records">
+
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -35,12 +43,48 @@
                     <th>Ação</th>
                 </tr>
             </thead>
-            <tbody>
 
+            <tbody>
+                <tr>
+                    <td>Felipe</td>
+                    <td>felipe@toctoc.com.br</td>
+                    <td>
+                        <button type="button" class="button yellow" id="visualizar" >Vizualizar</button>
+                        <button type="button" class="button green" id="edit">Editar</button>
+                        <button type="button" class="button red" id="delete" >Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Felipe</td>
+                    <td>felipe@toctoc.com.br</td>
+                    <td>
+                        <button type="button" class="button yellow" id="visualizar" >Vizualizar</button>
+                        <button type="button" class="button green" id="edit">Editar</button>
+                        <button type="button" class="button red" id="delete" >Excluir</button>
+                    </td>
+                </tr>
             </tbody>
+
         </table>
+
+
+
+
+        
         <div class="modal" id="modal">
-            <div class="modal-content">
+
+            <div class="modal-content" id="modal-delete-user">
+                <header class="modal-header">
+                    <h2>Tem certeza que deseja excluir este usuário?</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Confirmar</button>
+                    <button id="cancelar" class="button cancel">Cancelar</button>
+                </footer>
+            </div>
+
+            <div class="modal-content" id="modal-new-user">
                 <header class="modal-header">
                     <h2>Novo Usuário</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
@@ -48,6 +92,24 @@
                 <form id="form" class="modal-form">
                     <input type="text" id="nome" data-index="new" class="modal-field" placeholder="nome" required>
                     <input type="email" id="email" class="modal-field" placeholder="e-mail" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button cancel">Cancelar</button>
+                </footer>
+            </div>
+
+            <div class="modal-content" id="modal-manage-user">
+                <header class="modal-header">
+                    <h2>Editar/Visualizar Usuário</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="nome" required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail" required>
+
+                    
+                    <input type="password" id="password" class="modal-field" placeholder="password" required>
                 </form>
                 <footer class="modal-footer">
                     <button id="salvar" class="button green">Salvar</button>
