@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../public/css/modal-edit.css">
+    <link rel="stylesheet" href="../../../public/css/layout.css">
+    <link rel="stylesheet" href="../../../public/css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amethysta&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+
+
+        <div>
+            <button type="button" class="button yellow" id="visualizar">Editar Post</button>
+        </div>
+
+
+
+        <div class="modal" id="modal">
+
+            <div class="modal-content" id="modal-manage-user">
+                <div class="modal-header">
+                    <h2>Editar Post</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </div>
+
+                <form id="form" class="modal-form">
+                    <div>
+                        <label for="title">Título</label>
+                        <input type="text" id="title" name="title" data-index="new" class="modal-field"
+                            placeholder="Titulo" required>
+                    </div>
+
+                    <div>
+                        <label for="content">Conteúdo</label>
+                        <textarea id="content" name="content" class="modal-field"  rows="5" > </textarea>
+                    </div>
+
+                    <div>
+                        <label for="date">Data de Criação</label>
+                        <input type="date" id="date" name="date" class="modal-field" required>
+                    </div>
+
+                    <div>
+                        <label for="date">Autor</label>
+                        <input type="text" id="author" name="author" class="modal-field" required>
+                    </div>
+
+ 
+                </form>
+
+                <div class="modal-footer">
+                    <button id="salvar" class="button yellow">Salvar</button>
+                    <button id="cancelar" class="button cancel">Cancelar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../../../public/js/modal.js"></script>
+</body>
+
+</html>
