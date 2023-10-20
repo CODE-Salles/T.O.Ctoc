@@ -49,8 +49,6 @@ saveButton.onclick = function () {
     if (nome === "" || email === "" || senha === "") {
         validationMessage.style.display = "block";
     } else {
-        // Aqui você pode adicionar a lógica para salvar os dados
-        // Se os campos estiverem preenchidos corretamente
         validationMessage.style.display = "none";
     }
 };
