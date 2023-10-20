@@ -4,7 +4,8 @@
  var deleteUser = document.getElementById('delete');
 
  var modalBox = document.getElementById('modal');
- var modalClose = document.querySelectorAll('[id^="cancelar"]')
+ var modalClose1 = document.querySelectorAll('[id^="cancelar"]')
+ var modalX = document.querySelectorAll('[id^="modalClose"]')
  var modalNewUser = document.getElementById('modal-new-user');
  var modalManageUser = document.getElementById('modal-manage-user');
  var modalDeleteUser = document.getElementById('modal-delete-user');
@@ -22,13 +23,19 @@
       });
 }
 
- modalClose.forEach(element => {
+ modalClose1.forEach(element => {
     element.addEventListener('click', () => {
         manageModal('close');
         closeModals();
     });
  })
 
+ modalX.forEach(element => {
+    element.addEventListener('click', () => {
+        manageModal('close');
+        closeModals();
+    });
+ })
 
 
  function manageModal(typeModal){
