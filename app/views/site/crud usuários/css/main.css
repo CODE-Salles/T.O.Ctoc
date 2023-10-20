@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
-tbody{
-    background-color: white;
-}
+tr:nth-child(odd) {
+    background: white;
+  }
+  
+  tr:nth-child(even) {
+    background: hsl(16, 99%, 55%);
+  }
 
 .newUserBox{
     width: 100%;
@@ -26,7 +30,7 @@ tbody{
 
 :root{
     --primary-color: hsl(16, 99%, 45%);
-    --secundary-color: #FFF1CC;
+    --secundary-color: hsl(16, 99%, 65%);
     --shadow-color: #CCC;
     --text-color: #FFF;
 }
