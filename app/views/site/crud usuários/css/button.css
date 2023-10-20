@@ -20,15 +20,15 @@
 }
 
 button.yellow{
-    background-color: yellow;
+    background-color:  #009a44;
 }
 
 button.green{
-    background-color: #13CE66;
+    background-color: #ffd700;
 }
 
 button.red{
-    background-color: #FF4949;
+    background-color: #b50c2f;
 }
 
 .button:hover{

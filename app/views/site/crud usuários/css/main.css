@@ -75,3 +75,15 @@ footer{
     padding: 20px;
 }
 
+.icon{
+    width: 5%;
+    border-radius: 20%;
+    margin-left: 3%;
+}
+
+@media only screen and (max-width: 700px){
+    img{
+        width: 130px;
+    }
+
+}
