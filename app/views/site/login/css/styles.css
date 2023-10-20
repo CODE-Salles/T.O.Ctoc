@@ -155,13 +155,13 @@ div {
     background: linear-gradient(320deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 48%);
 }
 
-@media (max-width: 700px){
+@media only screen and (max-width: 700px){
 
 .esquerda img {
     position: absolute;
     margin-top: 0%;
-    margin-left: 38%;
-    width: 20%;
+    margin-left: 29%;
+    width: 40%;
 }
 
 .esquerda {
@@ -178,16 +178,17 @@ div {
 
 .login{
     font-size: 36px;
-    margin-top: 50%;
-    margin-left: 75%;
+    margin-top: 100%;
+    margin-left: 62%;
 }
 
 
 
 .dados1{
+    height: 5vh;
     width: 90%;
-    margin-top: 10%;
-    margin-left: 48%;
+    margin-top: 20%;
+    margin-left: 55%;
 }
 .dados1 input{
     font-size: 16px;
@@ -197,9 +198,10 @@ div {
 
 
 .dados2{
+    height: 5vh;
     width: 90%;
-    margin-top: 10%;
-    margin-left: 48%;
+    margin-top: 12%;
+    margin-left: 55%;
 }
 .dados2 input{
     font-size: 16px;
@@ -208,7 +210,7 @@ div {
 .senha{
     width: 79%;
     font-size: 12px;
-    margin-left: 49%;
+    margin-left: 55%;
     letter-spacing: 3px;
     margin-top: 5%;
 }
@@ -218,14 +220,14 @@ div {
     width: 30%;
     font-size: 20px;
     height: 5%;
-    margin-left: 32%;
-    margin-top: 7%;
+    margin-left: 35%;
+    margin-top: 15%;
 }
 
 .sombra {
-    height: 30vh;
+    height: 17vh;
     width: 70%;
-    margin-top: 25%;
+    margin-top: 149%;
     margin-left: 129%;
 }
 
