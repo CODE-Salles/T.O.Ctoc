@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&display=swap');
 :root {
    --preto : #000000; 
    --amarelo : #ffd700; 
@@ -11,6 +13,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Orbitron';
 }
 
 body {
@@ -20,7 +23,7 @@ body {
 
 /* Navbar  */
 .navbar {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Orbitron';
     display: flex;
     flex-direction: row;
 
@@ -174,7 +177,7 @@ body {
 
 /* Footer  */
 .footerbar {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Orbitron';
     display: flex;
     flex-direction: row;
 
@@ -269,10 +272,21 @@ body {
     text-decoration: none;
 }
 
+.footerbar-link-social-g i{
+    color: #8ad4aa !important;
+}
+.footerbar-link-social-y i{
+    color: #ffed68 !important;
+}
+
 .footerbar-link-social:hover,
 .footerbar-link-social:hover i {
     background: #ba8f7c;
     color: white;
+}
+
+.footerbar-link-social-g:hover{
+    background: #cbffb3;
 }
 
 .footerbar-link-social i {
@@ -283,7 +297,7 @@ body {
 
 
 .fakecontent {
-    height: 80vh;
+    height: 67vh;
 
 
 }
