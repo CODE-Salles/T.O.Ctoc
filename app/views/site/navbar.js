@@ -3,6 +3,7 @@ window.onscroll = function() {navBarClassChange()};
 var navbar = document.getElementById("navbar");
 var navbar_logo = document.getElementById("navbar-logo");
 var footer = document.getElementById("footerbar");
+var sharepage_button = document.getElementById("sharepage-button");
 var socials = document.querySelectorAll('.footerbar-link-social');
 
 var navbar_sticky = navbar.offsetTop;
@@ -46,6 +47,7 @@ function changePageColor(layout){
       navbar.classList = 'navbar navbar-g';  
       footer.classList = 'footerbar footerbar-g';  
       navbar_logo.style.backgroundColor = 'var(--verde)';
+      sharepage_button.classList = 'sharepage-button-g sharepage-button';
       socials.forEach(link =>{link.classList = 'footerbar-link-social footerbar-link-social-g'});
       break;
     case 'orange':
