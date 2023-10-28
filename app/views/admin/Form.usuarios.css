@@ -21,7 +21,7 @@ main {
 }
 
 #BoxCadastro {
-    background-color: #fff;
+    background-color: #fffafa;
     padding: 60px;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -46,7 +46,7 @@ main {
 }
 
 #BoxMenor {
-    background-color: #fff;
+    background-color: #fffafa;
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -87,4 +87,7 @@ button {
     margin-top: 4.5px;
 }
 
+input{
+    background-color: #fffafa;
+}
 
