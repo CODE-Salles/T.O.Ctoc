@@ -43,7 +43,7 @@ body {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: #fffafa;
     width: 80%;
     height: auto;
     justify-content: center;
@@ -114,6 +114,7 @@ input[type="password"] {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #fffafa;
 }
 
 button.save {
