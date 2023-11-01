@@ -16,10 +16,6 @@ body{
     width: 120px;
 }
 
-.button.blue.mobile{
-    margin-left: -30px;
-}
-
 .newUserBox{
     display: flex;
     justify-content: center;
@@ -70,31 +66,37 @@ td{
 
 .button{
     border-style: none;
-    height: 40px;
+    height: 38px;
     font-size: 16px;
     cursor: pointer;
     transition: box-shadow .4s ease;
     font-family: 'Orbitron', sans-serif;
-    border-radius: 12%;
+    border-radius: 4px;
 }
 .button.cancel{
     background-color: #ff0000;
 }
 .button.blue{
-    display: flex;
-    
+    height: 40px;
+    border-radius: 12%;
+    margin-left: -30px;
     background-color: #ffffff;
 }
 
 button.yellow{
+    border-radius: 3px;
+    margin-left: -1%;
     background-color:  #009a44;
 }
 
 button.green{
+    height: 36px;
+    margin-left: -1%;
     background-color: #ffd700;
 }
 
 button.red{
+    margin-left: -1%;
     background-color: #b50c2f;
 }
 
@@ -117,7 +119,7 @@ tbody{
 
 .icon{
     width: 33px;
-    border-radius: 20%;
+    border-radius: 4px;
     margin-left: 3%;
 }
 
@@ -152,7 +154,7 @@ footer{
     display: none;
     flex-direction: column;
     gap:20px;
-    width: 50vw;
+    width: 40vw;
     margin: 15vh auto;
     padding-bottom: 20px;
     background-color: white;
@@ -171,7 +173,9 @@ footer{
     line-height: 40px;
     font-size: 1rem;
 }
-
+.modal-header.deleteuser{
+    padding-left: 20px;
+}
 .modal-close{
     position: absolute;
     right: 0;
@@ -235,12 +239,19 @@ footer{
 }
 
 h2{
-    font-size: 14px;
+    font-size: 20px;
     padding-left: 5px;
 }
 
-.modal-header.deleteuser{
+.modal-header{
+    padding-left: 15px;
     height: 120px;
+}
+.modal-content{
+    width: 250px;
+}
+.modal-header.new-user{
+    text-align: center;
 }
 
 td{
@@ -250,6 +261,10 @@ td{
 .button{
     height: 30px;
     font-size: 16px;
+}
+
+button.green{
+    height: 30px;
 }
 
 .cubo{
