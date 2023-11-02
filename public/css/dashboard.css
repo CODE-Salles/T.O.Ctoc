@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&family=Oswald:wght@200&display=swap');
+
+
+body { 
+    background-color: #000000;
+    font-size: 0;
+    margin: 0px;
+    font-family: 'Orbitron';
+}
+
+.capa {
+    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+}
+
+
+.esquerdo, .direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+}
+
+
+button {
+    outline: none;
+}
+
+
+.esquerdo {
+    animation-name: esquerdo;
+    animation-duration: 2s;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10%;
+}
+
+
+.direito {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.link-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.link-button div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.primeiro {
+    background-color: #fffafa;
+    width: 30vw;
+    height: 11vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 3px rgb(255, 215, 0);
+    opacity: 1;
+    transition: 1s;
+    font-size: 2.8vh;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-weight: bolder;
+}
+
+
+.primeiro:hover {
+    opacity: 0.7;
+    transition: 1s;
+}
+
+
+.segundo {
+    background-color: #fffafa;
+    width: 30vw;
+    height: 11vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 3px rgb(182, 12, 47);
+    opacity: 1;
+    transition: 1s;
+    font-size: 2.8vh;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-weight: bolder;
+}
+
+
+.segundo:hover {
+    opacity: 0.7;
+    transition: 1s;
+}
+
+
+.terceiro {
+    background-color: #fffafa;
+    width: 30vw;
+    height: 11vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 3px rgb(0, 61, 165);
+    opacity: 1;
+    transition: 1s;
+    font-size: 2.8vh;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-weight: bolder;
+}
+
+
+.terceiro:hover {
+    opacity: 0.7;
+    transition: 1s;
+}
+
+
+.quarto {
+    background-color: #fffafa;
+    width: 30vw;
+    height: 11vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 3px rgb(0, 154, 68);
+    opacity: 1;
+    transition: 1s;
+    font-size: 2.8vh;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-weight: bolder;
+}
+
+
+.quarto:hover {
+    opacity: 0.7;
+    transition: 1s;
+}
+
+
+img {
+    width: 60%;
+    height: auto;
+    margin-left: -16%;
+    animation-name: img;
+    animation-duration: 3s;
+
+}
+
+
+@keyframes img {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+
+@keyframes esquerdo {
+    0% {transform: translate(0px, -20px);}
+    100% {transform: translate(0px, 0px);}
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.capa {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
+}
+
+.direito {
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    justify-self: center;
+    align-items: center;
+}
+
+img {
+    margin: 0px;
+    width: 70%;
+    height: auto;
+}
+
+.esquerdo {
+    width: 100%;
+    height: 70%;
+    animation: none;
+}
+
+.primeiro {
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
+
+.segundo {
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
+
+.terceiro {
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
+
+.quarto {
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    
+}
+
+
+}
