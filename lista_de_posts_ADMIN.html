@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Lista de Posts ADMIN</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/tabela.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div>
+            <img src="img/logoFundoRemovido.png" class="logo" alt="Logo">
+        </div>
+
+        <div class="newPostBox" id="newPostBox">
+
+            <img src="img/cuboFundoRemovido.png" class="cubo" alt="Logo"> 
+            
+            <button type="button" class="button post" id="CriarPost">Criar Novo Post</button>
+
+        </div>
+
+        
+        <table id="tabela" class="tabela">
+
+            <thead>
+
+                <tr>
+                    <th>Post</th>
+                    <th>Data</th>
+                    <th colspan="3">Ação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="linhaDaTabela">
+                    <td width="60%" class="Posts">Nome do Post e descrição</td>
+                    <td class="date">27/10/2023</td>
+                    <td>
+                    <button type="button" class="button yellow" id="view" >Visualizar</button></td>
+                    <td>
+                    <button type="button" class="button green" id="edit">Editar</button></td>
+                    <td>
+                    <button type="button" class="button red" id="delete" >Excluir</button></td>
+                    
+                </tr>
+                <tr class="adjacente">
+                    <td width="70%" class="Posts">Nome do Post e descrição</td>
+                    <td class="date">27/10/2023</td>
+                    <td>
+                    <button type="button" class="button yellow" id="visualizar" >Visualizar</button></td>
+                    <td>
+                    <button type="button" class="button green" id="edit">Editar</button></td>
+                    <td>
+                    <button type="button" class="button red" id="delete" >Excluir</button></td>
+                </tr>
+                <tr class="linhaDaTabela">
+                    <td width="70%" class="Posts">Nome do Post e descrição</td>
+                    <td class="date">20/10/2023</td>
+                    <td>
+                    <button type="button" class="button yellow" id="visualizar" >Visualizar</button></td>
+                    <td>
+                    <button type="button" class="button green" id="edit">Editar</button></td>
+                    <td>
+                    <button type="button" class="button red" id="delete" >Excluir</button></td>
+                </tr>
+                <tr class="adjacente">
+                    <td width="70%" class="Posts">Nome do Post e descrição</td>
+                    <td class="date">27/10/2023</td>
+                    <td>
+                    <button type="button" class="button yellow" id="visualizar" >Visualizar</button></td>
+                    <td>
+                    <button type="button" class="button green" id="edit">Editar</button></td>
+                    <td>
+                    <button type="button" class="button red" id="delete" >Excluir</button></td>
+                </tr>
+                <tr class="linhaDaTabela">
+                    <td width="70%" class="Posts">Nome do Post e descrição</td>
+                    <td class="date">27/10/2023</td>
+                    <td>
+                    <button type="button" class="button yellow" id="visualizar" >Visualizar</button></td>
+                    <td>
+                    <button type="button" class="button green" id="edit">Editar</button></td>
+                    <td>
+                    <button type="button" class="button red" id="delete" >Excluir</button></td>
+
+            </tbody>
+        </table>
+
+        <div class="modal" id="modal">
+
+            <div class="modal-content" id="modal-delete-user">
+                <header class="modal-header">
+                    <h2>Tem certeza que deseja excluir este post?</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <footer class="modal-footer del">
+                    <button id="salvar" class="button yellow">Confirmar</button>
+                    <button id="cancelar" class="button cancel">Cancelar</button>
+                </footer>
+            </div>
+
+            <div class="modal-content" id="modal-new-user">
+                <header class="modal-header">
+                    <h2>Novo Post</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="nome" required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button yellow">Salvar</button>
+                    <button id="cancelar" class="button cancel">Cancelar</button>
+                </footer>
+            </div>
+
+            <div class="modal-content" id="modal-manage-user">
+                <header class="modal-header">
+                    <h2>Editar/Visualizar Post</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="nome" required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail" required>
+
+                    
+                    <input type="password" id="password" class="modal-field" placeholder="password" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button yellow">Salvar</button>
+                    <button id="cancelar" class="button cancel">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        Think Outside The Cube
+    </footer>
+
+    </body>
+    <script src="js/scripts.js"></script>
+</html>
