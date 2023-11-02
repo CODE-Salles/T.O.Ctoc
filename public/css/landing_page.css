@@ -1,0 +1,643 @@
+body {
+    background-color: black;
+    margin: 0px;
+    font-size: 0px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Amethysta';
+}
+
+
+.capa-start {
+    display: flex;
+    justify-content: center;
+}
+
+
+.esquerdo, .meio, .direito {
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.esquerdo {
+    justify-content: end;
+    align-items: end;
+}
+
+
+.meio {
+    justify-content: end;
+    align-items: center;
+}
+
+
+.direito {
+    justify-content:end;
+    align-items: start;
+}
+
+
+.primeiro-esquerdo, .primeiro-direito {
+    background-color: #fffafa;
+    width: 70%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 5px 10px rgb(254,80,0);
+}
+
+
+.h1-esquerdo, .h1-direito {
+    color: black;
+    font-size: 3.5vh;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+
+.h1-direito {
+    font-size: 3vh;
+    margin-top: 0vh;
+}
+
+
+.imagem-esquerdo, .imagem-direito {
+    width: 90%;
+    height: auto;
+    border-radius: 2vh;
+    box-shadow: 0px 0px 0px 3px rgb(255, 215, 0);
+}
+
+
+.imagem-direito {
+    box-shadow: 0px 0px 0px 3px rgb(0, 154, 68);
+}
+
+
+.segundo-esquerdo, .segundo-direito {
+    background-color: black;
+    width: 90%;
+    height: 54%;
+    margin-top: 2vh;
+
+}
+
+
+.p-esquerdo {
+    font-size: 21px;
+    color: #fffafa;
+    text-align: justify;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 2vh;
+}
+
+
+button {
+    background-color: #fffafa;
+    width: 80%;
+    height: 20%;
+    border-radius: 2vh;
+    margin-left: 10%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.9vh;
+    font-weight: bold;
+    font-family: 'Orbitron';
+    opacity: 1;
+    transition: 1s;
+}
+
+
+button:hover {
+    font-size: 2vh;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+
+button a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.primeiro-meio, .terceiro-meio {
+    background-color: #fffafa;
+    width: 70%;
+    height: 32%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 6px 5px 10px rgb(254,80,0);
+}
+
+
+.quarto-meio, .quinto-meio {
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    border-radius: 2vh;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3vh;
+    box-shadow: 0px 0px 0px 3px rgb(182, 12, 47);
+}
+
+
+
+.meio button {
+    background-color: #fffafa;
+    width: 80%;
+    height: 28%;
+    border-radius: 2vh;
+    margin-left: 10%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: bold;
+    font-family: 'Orbitron';
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.meio button:hover{
+    font-size: 2.2vh;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+
+.segundo-meio {
+    width: 70%;
+    height: 32%;
+    text-align: center;
+}
+
+
+.imagem-meio {
+    background-color: black;
+    width: 50%;
+    height: auto;
+    margin-top: 4.5vh;
+    animation-name: imagem-meio;
+    animation-duration: 3s;
+}
+
+
+.quinto-meio {
+    box-shadow: 0px 0px 0px 3px rgb(0, 61, 165);
+}
+
+
+.segundo-direito li {
+    color: #fffafa;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 1vh;
+    margin-left: -11px;
+    padding-top: 4px;
+    padding-right: 10px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+
+.segundo-direito h2 {
+    color: #fffafa;
+    font-size: 24px;
+    margin: 0px;
+    margin-top: 12px;
+    padding-left: 10px;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+
+.segundo-direito a{
+    color: rgb(61, 132, 255);
+    font-size: 16px;
+    margin-top: 7vh;
+    margin-left: 10px;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+
+.imagem-grande{
+    margin-top: 10vh;
+    width: 100%;
+    height: 50%;
+}
+
+
+.title-mid {
+    color: #fffafa;
+    font-size: 5vh;
+    margin-top: 10vh;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.capa-mid{
+    display: flex;
+}
+
+
+.left, .right{
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.primeiro-left, .primeiro-right {
+    background-color: #fffafa;
+    width: 44%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 5px 10px rgb(254,80,0);
+}
+
+
+.segundo-left, .segundo-right, .segundo-end {
+    width: 90%;
+    height: 35%;
+    margin-top: 4%;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.segundo-left {
+    background-image: linear-gradient(180deg ,black,rgb(182, 12, 47), black);
+    box-shadow: 0px 0px 15px 3px black;
+}
+
+
+.segundo-right {
+    background-image: linear-gradient(180deg ,black,rgb(0, 154, 68), black);
+    box-shadow: 0px 0px 15px 3px black;
+}
+
+
+.segundo-end {
+    background-image: linear-gradient(180deg ,black,rgb(0, 61, 165), black);
+    box-shadow: 0px 0px 15px 3px black;
+}
+
+
+.imagem-left, .imagem-right, .imagem-end{
+    width: 91%;
+    height: 95%;
+    border-radius: 2vh;
+}
+
+
+.terceiro-left, .terceiro-right, .terceiro-end {
+    background-color: black;
+    width: 90%;
+    height: auto;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+
+.p-left{
+    font-size: 21px;
+    color: #fffafa;
+    text-align: justify;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 2vh;
+}
+
+
+.p-right {
+    font-size: 21px;
+    color: #fffafa;
+    text-align: justify;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 2vh;
+}
+
+
+.end {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.primeiro-end {
+    background-color: #fffafa;
+    width: 22%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 5px 10px rgb(254,80,0);
+}
+
+
+.p-end {
+    font-size: 21px;
+    color: #fffafa;
+    text-align: justify;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 2vh;
+}
+
+
+.title-end {
+    color: #fffafa;
+    font-size: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    margin-top: 5vh;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@keyframes imagem-meio {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+
+
+@media only screen and (max-width: 1800px) {
+
+    .segundo-esquerdo{
+        width: 92%;
+        height: 60%;
+        overflow: scroll;
+    }
+
+    .segundo-direito {
+        width: 90%;
+        height: 54%;
+        margin-top: 3vh;
+        overflow: scroll;
+    }
+
+    .terceiro-left, .terceiro-right, .terceiro-end {
+        background-color: black;
+        width: 90%;
+        height: 62%;
+        margin-top: 1.5vh;
+        display: flex;
+        overflow: scroll;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.capa-start {
+    display: flex;
+    flex-direction: column;
+}
+
+.esquerdo {
+    width: 100%;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.primeiro-esquerdo {
+    width: 95%;
+    height: 100%;
+    box-shadow: 0px 0px 0px;
+}
+
+.h1-esquerdo {
+    font-size: 3vh;
+}
+
+.segundo-esquerdo{
+    width: 92%;
+    height: 60%;
+    overflow: scroll;
+}
+
+.p-esquerdo {
+    font-size: 2.5vh;
+    color: #fffafa;
+    text-align: justify;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 2vh;
+}
+
+button {
+    width: 80%;
+    height: 13%;
+    cursor: none;
+    font-size: 2vh;
+}
+
+.meio {
+    width: 100%;
+    height: 98vh;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.primeiro-meio {
+    width: 95%;
+    height: 32%;
+    box-shadow: 0px 0px 0px;
+}
+
+.segundo-meio {
+    width: 95%;
+    height: 32%;
+    align-items: center;
+}
+
+.imagem-meio {
+    width: 50%;
+    height: auto;
+}
+
+.terceiro-meio {
+    width: 95%;
+    height: 32%;
+    box-shadow: 0px 0px 0px;
+}
+
+.direito {
+    width: 100%;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.primeiro-direito {
+    width: 95%;
+    height: 100%;
+    box-shadow: 0px 0px 0px;
+}
+
+.h1-direito {
+    font-size: 2.8vh;
+}
+
+.segundo-direito {
+    width: 90%;
+    height: 54%;
+    margin-top: 3vh;
+    overflow: scroll;
+}
+
+.segundo-direito li {
+    font-size: 2.1vh;
+    margin-left: -15px;
+    line-height: 2.5vh;
+}
+
+.segundo-direito h2 {
+    font-size: 2.2vh;
+    margin: 0px;
+    margin-top: 1vh;
+    padding-left: 10px;
+}
+
+.segundo-direito a{
+    font-size: 1.5vh;
+    margin-left: 3px;
+    padding-right: 1vh;
+}
+
+.imagem-grande {
+    margin-top: 7vh;
+    width: 100%;
+    height: 25%;
+}
+
+.title-mid {
+    font-size: 4vh;
+    margin-top: 6vh;
+}
+
+.capa-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    margin-top: 5vh;
+    width: 100%;
+    height: 98vh;
+}
+
+.primeiro-left  {
+    background-color: #fffafa;
+    width: 90%;
+    height: 100%;
+    box-shadow: 0px 0px 0px rgb(254,80,0);
+}
+
+
+.terceiro-left, .terceiro-right, .terceiro-end {
+    background-color: black;
+    width: 90%;
+    height: 62%;
+    margin-top: 1.5vh;
+    display: flex;
+    overflow: scroll;
+}
+
+.p-left, .p-right{
+    font-size: 2.3vh;
+    color: #fffafa;
+    padding-left: 1.6vh;
+    padding-right: 1.6vh;
+    margin-top: 1vh;
+}
+
+
+.right{
+    width: 100%;
+    height: 98vh;
+    margin-top: 8vh;
+}
+
+.primeiro-right {
+    background-color: #fffafa;
+    width: 90%;
+    height: 100%;
+    box-shadow: 0px 0px 0px rgb(254,80,0);
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    width: 100%;
+    height: 98vh;
+}
+
+.primeiro-end{
+    background-color: #fffafa;
+    width: 90%;
+    height: 100%;
+    box-shadow: 0px 0px 0px rgb(254,80,0);
+}
+
+.p-end {
+    font-size: 2.3vh;
+    color: #fffafa;
+    padding-left: 1.7vh;
+    padding-right: 1.7vh;
+    margin-top: 1vh;
+}
+
+.title-end {
+    font-size: 3.6vh;
+    margin-top: 6vh;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+}

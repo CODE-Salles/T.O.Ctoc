@@ -1,591 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Landing Page</title>
+    <title>New Landing Page</title>
+    <link rel="stylesheet" href="../../../public/css/landing_page.css">
 
-    <Style>
-        
-        html, body{
-            font-size: 0;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Amethysta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 
-        body {
-            background-color: red;
-            margin: 0px;
-        }
-       
-        .capa div{
-            display: inline-block;
-        }
-
-        .capa-baixo div{
-            display: inline-block;
-        }
-        
-        .primeiro {
-            background-color:white;
-            width: 390px;
-            height: 900px;
-            margin-top: 43px;
-            margin-left: 183px;
-            margin-right: 183px;
-            box-shadow: 6px 5px 10px rgb(254,80,0);
-        }
-
-        .primeiro h1{
-            font-size: 32px;
-            margin: 0px;
-            margin-top: 45px;
-            padding-left: 40px;
-            text-decoration: underline;
-        }
-
-
-        .primeiro img{
-            width: 350px;
-            height: 290px;
-            border-radius: 20px;
-            margin-top: 25px;
-            margin-left: 20px;
-            box-shadow: 0px 0px 0px 3px rgb(255, 215, 0);
-        }
-
-        .texto{
-            background-color:black;
-            width: 359px;
-            height: 469px;
-            margin-top: 21px;
-            margin-left: 15px;
-        }
-
-        .texto p{
-            color: white;
-            font-size: 24px;
-            margin: 0px;
-            margin-top: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
-            line-height: 28px;
-            text-align: justify;
-        }
-
-        button {
-
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            color: black;
-            text-decoration: underline;
-            font-size: 20px;
-            font-weight: bolder;
-            text-align: center;
-        }
-
-        button:hover {
-            opacity: 0.6;
-        }
-
-        .botao {
-            background-color: blue;
-            border-radius: 20px;
-            width: 297px;
-            height: 82px;
-            margin-top: 19px;
-            margin-left: 31px;
-        }
-
-
-        .segundo {
-            width: 390px;
-            height: 900px;
-            margin-top: 43px;
-            vertical-align: top;
-        }
-
-        .quadrado1 {
-            background-color: white;
-            width: 390px;
-            height: 350px;
-            box-shadow: 6px 5px 10px rgb(254,80,0);
-        }
-
-        .quadrado2 {
-            background-color: black;
-            width: 350px;
-            height: 290px;
-            border-radius: 20px;
-            margin-top: 30px;
-            margin-left: 20px;
-            box-shadow: 0px 0px 0px 3px rgb(182, 12, 47);
-            
-        }
-        
-        .botao2 {
-            border-radius: 20px;
-            width: 297px;
-            height: 82px;
-            margin-top: 42px;
-            margin-left: 26px;
-        }
-        
-        .botao3 {
-            border-radius: 20px;
-            width: 297px;
-            height: 82px;
-            margin-top: 42px;
-            margin-left: 26px;
-        }
-
-        .imagem-meio img{
-            width: 150px;
-            height: 150px;
-            margin-top: 25px;
-            margin-left: 120px;
-            border-radius: 360px;
-            animation-play-state: running;
-            animation-duration: 3s;
-        }
-
-        .quadrado3 {
-            background-color: white;
-            width: 390px;
-            height: 350px;
-            margin-top: 25px;
-            box-shadow: 6px 5px 10px rgb(254,80,0);
-        }
-
-        .quadrado4{
-            background-color: black;
-            width: 350px;
-            height: 290px;
-            border-radius: 20px;
-            margin-top: 30px;
-            margin-left: 20px;
-            box-shadow: 0px 0px 0px 3px rgb(0, 61, 165);
-        }
-
-        .botao4 {
-            border-radius: 20px;
-            width: 297px;
-            height: 82px;
-            margin-top: 42px;
-            margin-left: 26px;
-        }
-
-        .botao5 {
-            border-radius: 20px;
-            width: 297px;
-            height: 82px;
-            margin-top: 42px;
-            margin-left: 26px;
-        }
-
-       .terceiro {
-            background-color: white;
-            width: 390px;
-            height: 900px;
-            margin-left: 183px;
-            margin-top: 43px;
-            vertical-align: top;
-            box-shadow: 6px 5px 10px rgb(254,80,0);
-       }
-
-       .terceiro h1{
-
-            font-size: 32px;
-            margin: 0px;
-            margin-top: 20px;
-            padding-left: 73px;
-            padding-right: 73px;
-            line-height: 32px;
-            text-align: center;
-       }
-
-       .terceiro hr {
-            background-color: black;
-            width: 280px;
-            height: 2px;
-            margin-top: 3px;
-       }
-
-       .terceiro img{
-            width: 350px;
-            height: 290px;
-            border-radius: 20px;
-            margin-top: 20px;
-            margin-left: 20px;
-            box-shadow: 0px 0px 0px 3px rgb(0, 154, 68);
-        }
-
-        .quadrado5 {
-            background-color:black;
-            width: 359px;
-            height: 469px;
-            margin-top: 21px;
-            margin-left: 15px;
-        }
-
-        .quadrado5 li {
-
-            color: white;
-            font-size: 24px;
-            margin: 0px;
-            margin-top: 5px;
-            margin-left: -11px;
-            padding-top: 4px;
-            padding-right: 10px;
-            line-height: 28px;
-            text-align: justify;
-        }
-
-        .quadrado5 h2 {
-
-            color: white;
-            font-size: 24px;
-            margin: 0px;
-            margin-top: 12px;
-            padding-left: 10px;
-            text-align: justify;
-}
-
-        .quadrado5 hr{
-            background-color: white;
-            width: 150px;
-            margin-top: 0px;
-            margin-left: 8px;
-            margin-bottom: 16px;
-            height: 1px;
-        }
-
-        .quadrado5 a{
-
-            color: rgb(61, 132, 255);
-            font-size: 16px;
-            margin: 0px;
-            margin-top: 3px;
-            margin-left: 10px;
-
-            text-align: justify;
-        }
-
-        img {
-            margin-top: 81px;
-            width: 100%;
-            height: 400px;
-
-        }
-
-        .parte-baixo h1 {
-
-            color: white;
-            font-size: 40px;
-            margin: 0px;
-            margin-top: 80px;
-            padding-left: 835px;
-            padding-right: 835px;
-            text-decoration: underline;
-        }
-
-        
-
-        .outro-hr hr {
-            background-color: white;
-            width: 200px;
-            margin-top: 0px;
-            margin-bottom: 16px;
-            height: 2px;
-        }
-
-        .quadrado6 {
-            background-color: white;
-            margin-left: 367px;
-            margin-right: 367px;
-            margin-top: 70px;
-            width: 400px;
-            height: 825px;
-        }
-
-        .quadrado7 {
-            background-color: white;
-            margin-top: 70px;
-            width: 400px;
-            height: 825px;
-            vertical-align: top;
-        }
-
-        .quadrado8 {
-            border-radius: 20px;
-            margin-top: 20px;
-            margin-left: 15px;
-            width: 370px;
-            height: 300px;
-            background-image: linear-gradient(180deg ,black, rgb(182, 12, 47), black);
-            box-shadow: 0px 0px 15px 3px black;
-        }
-
-        .quadrado9 {
-            background-color: black;
-            border-radius: 20px;
-            margin-top: 20px;
-            margin-left: 15px;
-            width: 370px;
-            height: 300px;
-            background-image: linear-gradient(180deg ,black,rgb(0, 154, 68), black);
-            box-shadow: 0px 0px 15px 3px black;
-        }
-
-        .quadrado8 img {
-            width: 340px;
-            height: 280px;
-            margin-top: 10px;
-            margin-left: 15px;
-            border-radius: 20px;
-        }
-
-        .quadrado9 img {
-            width: 340px;
-            height: 280px;
-            margin-top: 10px;
-            margin-left: 15px;
-            border-radius: 20px;
-        }
-
-        .quadrado10 {
-            background-color:black;
-            width: 360px;
-            height: 478px;
-            margin-top: 26px;
-            margin-left: 5px;
-        }
-
-        .quadrado11 {
-            background-color:black;
-            width: 360px;
-            height: 478px;
-            margin-top: 26px;
-            margin-left: 5px;
-        }
-
-        .quadrado10 p {
-            color: white;
-            font-size: 24px;
-            margin: 0px;
-            margin-top: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            line-height: 28px;
-            text-align: justify;
-        }
-
-        .quadrado11 p {
-            color: white;
-            font-size: 24px;
-            margin: 0px;
-            margin-top: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            line-height: 28px;
-            text-align: justify;
-        }
-
-        .quadrado12 {
-            background-color: white;
-            margin-left: 751px;
-            margin-right: 751px;
-            margin-top: 85px;
-            width: 400px;
-            height: 825px;
-        }
-
-        .quadrado13 {
-            background-color: black;
-            border-radius: 20px;
-            margin-top: 20px;
-            margin-left: 15px;
-            width: 370px;
-            height: 300px;
-            background-image: linear-gradient(180deg ,black, rgb(0, 61, 165), black);
-            box-shadow: 0px 0px 15px 3px black;
-        }
-
-        .quadrado13 img {
-            width: 340px;
-            height: 280px;
-            margin-top: 10px;
-            margin-left: 15px;
-            border-radius: 20px;
-        }
-
-        .quadrado14 {
-            background-color:black;
-            width: 360px;
-            height: 478px;
-            margin-top: 26px;
-            margin-left: 5px;
-        }
-
-        .quadrado14 p {
-            color: white;
-            font-size: 24px;
-            margin: 0px;
-            margin-top: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            line-height: 28px;
-            text-align: justify;
-        }
-
-        .frase-final {
-            color: white;
-            font-size: 40px;
-            margin: 0px;
-            margin-top: 10px;
-            padding-left: 763px;
-            padding-right: 763px;
-
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-    }
-            
-    </Style>
-
-    
 </head>
 <body>
-    
-    <div class="capa">
 
-        <div class="primeiro">
-            <h1>Sobre o Cubo Mágico:</h1>
-            <img src="img/Criador do cubo mágico.jpg">
-            <div class="texto">
-                <p>Conhecido também como cubo Rubik, o cubo mágico foi inventado pelo professor Erno Rubik, em 1974. No mesmo ano, recebeu o prêmio alemão de "Jogo do Ano". Além disso, seu próprio criador demorou cerca de 1 mês para resolver o cubo pela primeira vez. Mais algumas coisas aleatórias para preencher o quadrado inteiro, e mais coisas ainda pra fechar a linha abaixo.</p>
-                    
-                    <a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">
-                        <div class="botao">
-                            <button>
-                                <a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Clique aqui para saber mais</a>
-                            </button>
-                        </div>
-                    </a>
-                        
-                    
-            </div>
-        </div>
+    <div class="capa-start">
+        <div class="esquerdo">
+            <div class="primeiro-esquerdo">
+                <h1 class="h1-esquerdo">Sobre o Cubo Mágico:</h1>
 
+                <img class="imagem-esquerdo" src="../../../public/assets/Criador do cubo mágico.jpg">
 
-        <div class="segundo">
-            <div class="quadrado1">
-                <div class="quadrado2">
-                    <div class="botao2">
-                        <button>
-                            <a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Utilidades do cubo</a>
-                        </button>
-                    </div>
+                <div class="segundo-esquerdo">
+                    <p class="p-esquerdo">Conhecido também como cubo Rubik, o cubo mágico foi inventado pelo professor Erno Rubik, em 1974. No mesmo ano, recebeu o prêmio alemão de "Jogo do Ano". Além disso, seu próprio criador demorou cerca de 1 mês para resolver o cubo pela primeira vez. Mais algumas coisas aleatórias para preencher o quadrado inteiro, e mais coisas ainda pra fechar a linha abaixo.</p>
 
-                    <div class="botao3">
-                        <button>
-                            <a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Variações do Cubo</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
+                    <button><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Clique aqui para saber mais</a></button>
 
-
-            <div class="imagem-meio">
-                <img src="img/toctoc.jpg">
-            </div>
-
-
-            <div class="quadrado3">
-                <div class="quadrado4">
-                    <div class="botao4">
-                        <button>
-                            <a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Dicas para resolver</a>
-                        </button>
-                    </div>
-
-                    <div class="botao5">
-                        <button>
-                            <a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Mais curiosidades</a>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
-        
 
-        <div class="terceiro">
-            <h1>Como montar um Cubo Mágico:</h1>
-            <hr>
-            <img src="img/cubo-magico.1.jpg">
-            <div class="quadrado5">
-                <ol>
-                    <li>Identifique os 3 tipos de peça: centro, canto e borda.</li>
-                    <li>Monte uma cruz.</li>
-                    <li>Vire a cruz branca para a face de baixo do cubo, formando uma cruz completamente branca.</li>
-                    <li>Resolva a primeira camada.</li>
-                    <li>Resolva a camada intermediária.</li>
-                    <li>Posicione os cantos e as bordas do cubo.</li>
-                    <li>Escrevendo coisas aleatórias.</li>
-                </ol>
-                <h2>Link do vídeo:</h2>
-                <hr>
-                <a href="https://www.youtube.com/watch?v=GS_k8Benc1E">https://www.youtube.com/watch?v=GS_k8Benc1E</a>
+        <div class="meio">
+            <div class="primeiro-meio">
+                <div class="quarto-meio">
+                        <button><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Utilidades do cubo</a></button>
+                        <button><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Variações do Cubo</a></button>
+                </div>
+            </div>
+
+            <div class="segundo-meio">
+                <img class="imagem-meio" src="../../../public/assets/toctoc.png">
+            </div>
+
+            <div class="terceiro-meio">
+                <div class="quinto-meio">
+                    <button><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Dicas para resolver</a></button>
+                    <button><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Mais curiosidades</a></button>
+                </div>
             </div>
         </div>
 
+        <div class="direito">
+            <div class="primeiro-direito">
+                <h1 class="h1-direito">Como montar um Cubo Mágico:</h1>
 
+                <img class="imagem-direito" src="../../../public/assets/cubo-magico.1.jpg">
+
+                <div class="segundo-direito">
+                    <ol>
+                        <li>Identifique os 3 tipos de peça: centro, canto e borda.</li>
+                        <li>Monte uma cruz.</li>
+                        <li>Vire a cruz branca para a face de baixo do cubo, formando uma cruz completamente branca.</li>
+                        <li>Resolva a primeira camada.</li>
+                        <li>Resolva a camada intermediária.</li>
+                        <li>Posicione os cantos e as bordas do cubo.</li>
+                        <li>Escrevendo coisas aleatórias.</li>
+                    </ol>
+
+                    <h2>Link do vídeo:</h2>
+
+                    <a href="https://www.youtube.com/watch?v=GS_k8Benc1E">https://www.youtube.com/watch?v=GS_k8Benc1E</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <img src="img/Imagem cubo2.webp">
+    <img class="imagem-grande" src="../../../public/assets/Imagem cubo2.webp">
     
-    <div class="parte-baixo">
-        <h1>DIVIRTA-SE</h1>
-    </div>
 
-    <div class="capa-baixo">
+    <h1 class="title-mid">DIVIRTA-SE</h1>
 
-        <div class="quadrado6">
-            <div class="quadrado8">
-                <img src="img/okamoto-y-greg-lattice-cube-4-colores.webp">
-                <div class="quadrado10">
-                    <p>Ernő Rubik foi a primeira pessoa a resolver o cubo de Rubik, levando cerca de um mês depois de criar seu protótipo de madeira em 1974. Seu método original se resumia em: resolver as quinas da camada D, colocar as quinas da camada U no lugar e depois orientá-las, resolver três meios da camada D, resolver três meios da camada U, resolver os demais meios das camadas D e U. Escrevendo, agora, mais algumas coisas aleatórias para poder ocupar todo o espaco do post e utilizar 100% do espaco.</p>
+    <div class="capa-mid">
+        <div class="left">
+            <div class="primeiro-left">
+                <div class="segundo-left">
+                    <img class="imagem-left" src="../../../public/assets/okamoto-y-greg-lattice-cube-4-colores.webp">
+                </div>
+
+                <div class="terceiro-left">
+                    <p class="p-left">Ernő Rubik foi a primeira pessoa a resolver o cubo de Rubik, levando cerca de um mês depois de criar seu protótipo de madeira em 1974. Seu método original se resumia em: resolver as quinas da camada D, colocar as quinas da camada U no lugar e depois orientá-las, resolver três meios da camada D, resolver três meios da camada U, resolver os demais meios das camadas D e U. Escrevendo, agora, mais algumas coisas aleatórias para poder ocupar todo o espaco do post e utilizar 100% do espaco.</p>
                 </div>
             </div>
         </div>
 
-        
-        <div class="quadrado7">
-            <div class="quadrado9">
-                <img src="img/cubo.png">
-                <div class="quadrado11">
-                    <p>Com o lançamento do cubo se iniciou a procura pelo número de deus do cubo mágico. Já em 1981 sabia-se que esse número deveria ser pelo menos 18 (listando todas as movimentações possíveis, sem cancelamentos, de até 18 movimentos se consegue sequências suficientes para associar cada uma a uma posição possível do cubo mágico, 17 não é o suficiente).  Escrevendo mais algumas coisas aleatórias para poder ocupar todo o espaco do post e utilizar 100%.</p>
+        <div class="right">
+            <div class="primeiro-right">
+                <div class="segundo-right">
+                    <img class="imagem-right" src="../../../public/assets/cubo.png">
+                </div>
+
+                <div class="terceiro-right">
+                    <p class="p-right">Com o lançamento do cubo se iniciou a procura pelo número de deus do cubo mágico. Já em 1981 sabia-se que esse número deveria ser pelo menos 18 (listando todas as movimentações possíveis, sem cancelamentos, de até 18 movimentos se consegue sequências suficientes para associar cada uma a uma posição possível do cubo mágico, 17 não é o suficiente).  Escrevendo mais algumas coisas aleatórias para poder ocupar todo o espaco do post e utilizar 100% do espaco disponibilizado.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="quadrado12">
-            <div class="quadrado13">
-                <img src="img/cubo 2.png">
-                <div class="quadrado14">
-                    <p>O cubo original confeccionado por Rubik era feito de madeira, diferentemente dos cubos atuais que em geral são feitos de plástico. Como os atuais, contava com 6 cores diferentes, uma em cada um de seus lados e 3 tipos de peças diferentes: centros, meios e quinas, que contam com 1, 2 e 3 cores diferentes respectivamente. O cubo tem 6 centros, 12 meios e 8 quinas. Escrevendo, agora, mais algumas coisas aleatórias para poder ocupar todo o espaco do post e utilizar 100% do espaco.</p>
-                </div>
+    <div class="end">
+        <div class="primeiro-end">
+            <div class="segundo-end">
+                <img class="imagem-end" src="../../../public/assets/cubo 2.png">
+            </div>
+
+            <div class="terceiro-end">
+                <p class="p-end">O cubo original confeccionado por Rubik era feito de madeira, diferentemente dos cubos atuais que em geral são feitos de plástico. Como os atuais, contava com 6 cores diferentes, uma em cada um de seus lados e 3 tipos de peças diferentes: centros, meios e quinas, que contam com 1, 2 e 3 cores diferentes respectivamente. O cubo tem 6 centros, 12 meios e 8 quinas. Escrevendo, agora, mais algumas coisas aleatórias para poder ocupar todo o espaco do post e utilizar 100% do espaco.</p>
             </div>
         </div>
-
     </div>
-    <div class="frase-final">
-        <p>Think outside the cube.</p>
-    </div>
-    
 
-    
+    <h1 class="title-end">Think outside the cube</h1>
     
 </body>
 </html>
