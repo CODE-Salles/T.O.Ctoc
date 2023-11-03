@@ -99,7 +99,7 @@ body {
 }
 
 
-button {
+.button-lp {
     background-color: #fffafa;
     width: 80%;
     height: 20%;
@@ -115,14 +115,14 @@ button {
 }
 
 
-button:hover {
+.button-lp:hover {
     font-size: 2vh;
     opacity: 0.7;
     transition: 1s;
 }
 
 
-button a {
+.button-lp a {
     color: black;
     text-decoration: none;
     width: 100%;
@@ -466,7 +466,7 @@ button a {
     margin-top: 2vh;
 }
 
-button {
+.button-lp {
     width: 80%;
     height: 13%;
     cursor: none;
