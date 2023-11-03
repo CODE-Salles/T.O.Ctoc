@@ -10,7 +10,6 @@ thead{
     width: 85%;
     margin-top: 10px;
     user-select: none;
-    border-collapse: collapse; 
 }
 
 .tabela th{
@@ -22,6 +21,10 @@ thead{
     text-align: center;
     height: 50px;
     font-size: 18px;
+}
+
+.ações{
+    border-collapse: collapse; 
 }
 
 .tabela tr:hover{
