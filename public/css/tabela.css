@@ -10,6 +10,7 @@ thead{
     width: 85%;
     margin-top: 10px;
     user-select: none;
+    border-collapse: collapse; 
 }
 
 .tabela th{
@@ -30,5 +31,6 @@ thead{
 .linhaDaTabela{
     height: 50px;
     background-color: white;
+    border: none;
 }
 
