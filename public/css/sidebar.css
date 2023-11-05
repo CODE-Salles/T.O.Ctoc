@@ -33,6 +33,10 @@ body{
     color: white;
 }
 
+.sidebar-button .fa-gear{
+    display: none;
+}
+
 .sidebar-button:hover{
     color: yellow;
     cursor: pointer;
@@ -81,6 +85,15 @@ body{
     .sidebar-button{
         border-bottom: none;
     }
+
+    .sidebar-button .fa-bars{
+        display: none;
+    }
+
+    .sidebar-button .fa-gear{
+        display: block;
+    }
+
     .sidebar-links{
         height: 0;
         overflow: hidden;
