@@ -168,14 +168,14 @@
 
     <div class="modal" id="modal">
 
-        <div class="modal-content modal-delete" id="modal-delete-post-1">
+        <div class="modal-content " id="modal-delete-post-1">
 
             <div class="modal-header">
                 <h2>Exclusão de Post</h2>
                 <span class="modal-close" id="action-modalClose">&#10006;</span>
             </div>
 
-            <form id="form" class="modal-form">
+            <form id="form" class="modal-form modal-delete">
 
                 <div class="form-row">
                     <span >Tem certeza que deseja excluir este post?</span>
@@ -188,17 +188,24 @@
             </form>
         </div>
 
-        <div class="modal-content" id="modal-delete-post-2">
+        <div class="modal-content " id="modal-delete-post-2">
 
             <div class="modal-header">
-                <h2>Tem certeza que deseja excluir este post?</h2>
+                <h2>Exclusão de Post</h2>
                 <span class="modal-close" id="action-modalClose">&#10006;</span>
             </div>
 
-            <div class="modal-footer del">
-                <button id="salvar" class="button confirm">Confirmar</button>
-                <button id="cancelar" class="button cancel">Cancelar</button>
-            </div>
+            <form id="form" class="modal-form modal-delete">
+
+                <div class="form-row">
+                    <span >Tem certeza que deseja excluir este post?</span>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="salvar" type="submit" class="button confirm">Salvar</button>
+                    <button id="cancelar" class="button cancel">Cancelar</button>
+                </div>
+            </form>
         </div>
 
 
