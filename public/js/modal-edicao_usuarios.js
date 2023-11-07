@@ -1,6 +1,6 @@
-var modal = document.getElementById("modal");
-var btn = document.getElementById("open-modal");
-var span = document.getElementsByClassName("close")[0];
+var modal = document.getElementById("modal-medu");
+var btn = document.getElementById("open-modal-medu");
+var span = document.getElementsByClassName("close-medu")[0];
 
 btn.onclick = function(){
     modal.style.display = "block";
@@ -18,14 +18,14 @@ window.onclick = function(event){
 
 // --------------------- //
 
-var modal = document.getElementById("modal");
-var btn = document.getElementById("open-modal");
-var span = document.getElementsByClassName("close")[0];
-var nomeInput = document.getElementById("nome");
-var emailInput = document.getElementById("email");
-var senhaInput = document.getElementById("senha");
-var saveButton = document.querySelector(".save");
-var validationMessage = document.getElementById("validation-message");
+var modal = document.getElementById("modal-medu");
+var btn = document.getElementById("open-modal-medu");
+var span = document.getElementsByClassName("close-medu")[0];
+var nomeInput = document.getElementById("nome-medu");
+var emailInput = document.getElementById("email-medu");
+var senhaInput = document.getElementById("senha-medu");
+var saveButton = document.querySelector(".button-save");
+var validationMessage = document.getElementById("validation-message-medu");
 
 btn.onclick = function () {
     modal.style.display = "block";

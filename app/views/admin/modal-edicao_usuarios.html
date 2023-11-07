@@ -6,58 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../public/css/modal-edicao_usuarios.css">
-    <title>Edição de Usuários</title>
+    <title>Modal-Edição de Usuários</title>
 </head>
 
 <body>
     <main>
 
-    <div class="tudo">
-        <div class="foraModal" id="foraModal">
+    <div class="tudo-medu">
+        <div class="foraModal-medu" id="foraModal-medu">
             <h1>Edição de Usuários</h1>
-            <button class="open-modal" id="open-modal">Abrir</button>
+            <button class="open-modal-medu" id="open-modal-medu">Abrir</button>
         </div>
     
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <div class="modal-head">
+        <div class="modal-medu" id="modal-medu">
+            <div class="modal-content-medu">
+                <div class="modal-head-medu">
                     <h2>Edição de Usuários</h2>
-                    <span class="close">&times;</span>
+                    <span class="close-medu">&times;</span>
                 </div>
-                <div class="content-body" id="content-body">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+                <div class="content-body-medu" id="content-body-medu">
+                    <label class="label-medu" for="nome">Nome:</label>
+                    <input type="text" id="nome-medu" name="nome" required>
     
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label class="label-medu" for="email">E-mail:</label>
+                    <input type="email" id="email-medu" name="email" required>
     
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" required>
+                    <label class="label-medu" for="senha">Senha:</label>
+                    <input type="password" id="senha-medu" name="senha" required>
     
-                    <p id="validation-message" style="color: red; display: none;">Por favor, preencha todos os campos.</p>
-                    <button class="save">Cadastrar</button>
+                    <p id="validation-message-medu" style="color: red; display: none;">Por favor, preencha todos os campos.</p>
+                    <button class="button-save">Cadastrar</button>
                 </div>
     
-                <hr class="separa">
+                <hr class="separa-medu">
     
-                
-    
-                <div class="confirmar-edicao">
-                  <label class="label-baixo" for="confirmacaoExclusao">Confirmar Edição:</label>
+                <div class="confirmar-edicao-medu">
+                  <label class="label-baixo-medu" for="confirmacaoEdicao">Confirmar Edição:</label>
                   <input type="checkbox" id="confirmacaoEdicao" name="confirmacaoEdicao" required>
-                  <button class="botao-edicao" type="submit">Editar Usuário</button>
+                  <button class="button-edicao-medu" type="submit">Editar Usuário</button>
                 </div>
 
-                <div class="confirmar-exclusao">
-                    <label class="label-cima" for="confirmacaoExclusao">Confirmar Exclusão:</label>
+                <div class="confirmar-exclusao-medu">
+                    <label class="label-cima-medu" for="confirmacaoExclusao">Confirmar Exclusão:</label>
                     <input type="checkbox" id="confirmacaoExclusao" name="confirmacaoExclusao" required>
-                    <button class="botao-exclusao" type="submit">Excluir Usuário</button>
+                    <button class="button-exclusao-medu" type="submit">Excluir Usuário</button>
                   </div>
             </div>
         </div>
     </div>
     
-
     <script src="../../../public/js/modal-edicao_usuarios.js"></script>
 </main>
 </body>
