@@ -8,13 +8,13 @@ body {
 }
 
 
-.capa-start {
+.capa-start-lp {
     display: flex;
     justify-content: center;
 }
 
 
-.esquerdo, .meio, .direito {
+.esquerdo-lp, .meio-lp, .direito-lp {
     width: 33%;
     height: 100vh;
     display: flex;
@@ -22,25 +22,25 @@ body {
 }
 
 
-.esquerdo {
+.esquerdo-lp {
     justify-content: end;
     align-items: end;
 }
 
 
-.meio {
+.meio-lp {
     justify-content: end;
     align-items: center;
 }
 
 
-.direito {
+.direito-lp {
     justify-content:end;
     align-items: start;
 }
 
 
-.primeiro-esquerdo, .primeiro-direito {
+.primeiro-esquerdo-lp, .primeiro-direito-lp {
     background-color: #fffafa;
     width: 70%;
     height: 96%;
@@ -52,7 +52,7 @@ body {
 }
 
 
-.h1-esquerdo, .h1-direito {
+.h1-esquerdo-lp, .h1-direito-lp {
     color: black;
     font-size: 3.5vh;
     text-decoration: underline;
@@ -61,13 +61,13 @@ body {
 }
 
 
-.h1-direito {
+.h1-direito-lp {
     font-size: 3vh;
     margin-top: 0vh;
 }
 
 
-.imagem-esquerdo, .imagem-direito {
+.imagem-esquerdo-lp, .imagem-direito-lp {
     width: 90%;
     height: auto;
     border-radius: 2vh;
@@ -75,12 +75,12 @@ body {
 }
 
 
-.imagem-direito {
+.imagem-direito-lp {
     box-shadow: 0px 0px 0px 3px rgb(0, 154, 68);
 }
 
 
-.segundo-esquerdo, .segundo-direito {
+.segundo-esquerdo-lp, .segundo-direito-lp {
     background-color: black;
     width: 90%;
     height: 54%;
@@ -89,7 +89,7 @@ body {
 }
 
 
-.p-esquerdo {
+.p-esquerdo-lp {
     font-size: 21px;
     color: #fffafa;
     text-align: justify;
@@ -134,7 +134,7 @@ body {
 }
 
 
-.primeiro-meio, .terceiro-meio {
+.primeiro-meio-lp, .terceiro-meio-lp {
     background-color: #fffafa;
     width: 70%;
     height: 32%;
@@ -145,7 +145,7 @@ body {
 }
 
 
-.quarto-meio, .quinto-meio {
+.quarto-meio-lp, .quinto-meio-lp {
     background-color: black;
     width: 90%;
     height: 90%;
@@ -160,8 +160,7 @@ body {
 }
 
 
-
-.meio button {
+.meio-lp .button-lp {
     background-color: #fffafa;
     width: 80%;
     height: 28%;
@@ -177,36 +176,36 @@ body {
 }
 
 
-.meio button:hover{
+.meio-lp button:hover{
     font-size: 2.2vh;
     opacity: 0.7;
     transition: 1s;
 }
 
 
-.segundo-meio {
+.segundo-meio-lp {
     width: 70%;
     height: 32%;
     text-align: center;
 }
 
 
-.imagem-meio {
+.imagem-meio-lp {
     background-color: black;
     width: 50%;
     height: auto;
     margin-top: 4.5vh;
-    animation-name: imagem-meio;
+    animation-name: imagem-meio-lp;
     animation-duration: 3s;
 }
 
 
-.quinto-meio {
+.quinto-meio-lp {
     box-shadow: 0px 0px 0px 3px rgb(0, 61, 165);
 }
 
 
-.segundo-direito li {
+.segundo-direito-lp li {
     color: #fffafa;
     font-size: 20px;
     margin: 0px;
@@ -219,7 +218,7 @@ body {
 }
 
 
-.segundo-direito h2 {
+.segundo-direito-lp h2 {
     color: #fffafa;
     font-size: 24px;
     margin: 0px;
@@ -230,7 +229,7 @@ body {
 }
 
 
-.segundo-direito a{
+.segundo-direito-lp a {
     color: rgb(61, 132, 255);
     font-size: 16px;
     margin-top: 7vh;
@@ -240,14 +239,14 @@ body {
 }
 
 
-.imagem-grande{
+.imagem-grande-lp {
     margin-top: 10vh;
     width: 100%;
     height: 50%;
 }
 
 
-.title-mid {
+.title-mid-lp {
     color: #fffafa;
     font-size: 5vh;
     margin-top: 10vh;
@@ -256,12 +255,12 @@ body {
 }
 
 
-.capa-mid{
+.capa-mid-lp {
     display: flex;
 }
 
 
-.left, .right{
+.left-lp, .right-lp {
     width: 50%;
     height: 90vh;
     display: flex;
@@ -270,7 +269,7 @@ body {
 }
 
 
-.primeiro-left, .primeiro-right {
+.primeiro-left-lp, .primeiro-right-lp {
     background-color: #fffafa;
     width: 44%;
     height: 96%;
@@ -282,7 +281,7 @@ body {
 }
 
 
-.segundo-left, .segundo-right, .segundo-end {
+.segundo-left-lp, .segundo-right-lp, .segundo-end-lp {
     width: 90%;
     height: 35%;
     margin-top: 4%;
@@ -293,32 +292,32 @@ body {
 }
 
 
-.segundo-left {
+.segundo-left-lp {
     background-image: linear-gradient(180deg ,black,rgb(182, 12, 47), black);
     box-shadow: 0px 0px 15px 3px black;
 }
 
 
-.segundo-right {
+.segundo-right-lp {
     background-image: linear-gradient(180deg ,black,rgb(0, 154, 68), black);
     box-shadow: 0px 0px 15px 3px black;
 }
 
 
-.segundo-end {
+.segundo-end-lp {
     background-image: linear-gradient(180deg ,black,rgb(0, 61, 165), black);
     box-shadow: 0px 0px 15px 3px black;
 }
 
 
-.imagem-left, .imagem-right, .imagem-end{
+.imagem-left-lp, .imagem-right-lp, .imagem-end-lp{
     width: 91%;
     height: 95%;
     border-radius: 2vh;
 }
 
 
-.terceiro-left, .terceiro-right, .terceiro-end {
+.terceiro-left-lp, .terceiro-right-lp, .terceiro-end-lp {
     background-color: black;
     width: 90%;
     height: auto;
@@ -328,7 +327,7 @@ body {
 }
 
 
-.p-left{
+.p-left-lp{
     font-size: 21px;
     color: #fffafa;
     text-align: justify;
@@ -338,7 +337,7 @@ body {
 }
 
 
-.p-right {
+.p-right-lp {
     font-size: 21px;
     color: #fffafa;
     text-align: justify;
@@ -348,7 +347,7 @@ body {
 }
 
 
-.end {
+.end-lp {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -357,7 +356,7 @@ body {
 }
 
 
-.primeiro-end {
+.primeiro-end-lp {
     background-color: #fffafa;
     width: 22%;
     height: 96%;
@@ -369,7 +368,7 @@ body {
 }
 
 
-.p-end {
+.p-end-lp {
     font-size: 21px;
     color: #fffafa;
     text-align: justify;
@@ -379,7 +378,7 @@ body {
 }
 
 
-.title-end {
+.title-end-lp {
     color: #fffafa;
     font-size: 5vh;
     padding-top: 1vh;
@@ -390,7 +389,7 @@ body {
 }
 
 
-@keyframes imagem-meio {
+@keyframes imagem-meio-lp {
     0% {opacity: 0;}
     100% {opacity: 1;}
     
@@ -400,27 +399,27 @@ body {
 
 @media only screen and (max-width: 1800px) {
 
-    .segundo-esquerdo{
-        width: 92%;
-        height: 60%;
-        overflow: scroll;
-    }
+.segundo-esquerdo-lp{
+    width: 92%;
+    height: 60%;
+    overflow: scroll;
+}
 
-    .segundo-direito {
-        width: 90%;
-        height: 54%;
-        margin-top: 3vh;
-        overflow: scroll;
-    }
+.segundo-direito-lp {
+    width: 90%;
+    height: 54%;
+    margin-top: 3vh;
+    overflow: scroll;
+}
 
-    .terceiro-left, .terceiro-right, .terceiro-end {
-        background-color: black;
-        width: 90%;
-        height: 62%;
-        margin-top: 1.5vh;
-        display: flex;
-        overflow: scroll;
-    }
+.terceiro-left-lp, .terceiro-right-lp, .terceiro-end-lp {
+    background-color: black;
+    width: 90%;
+    height: 62%;
+    margin-top: 1.5vh;
+    display: flex;
+    overflow: scroll;
+}
 
 
 }
@@ -428,12 +427,12 @@ body {
 
 @media only screen and (max-width: 767px) {
 
-.capa-start {
+.capa-start-lp {
     display: flex;
     flex-direction: column;
 }
 
-.esquerdo {
+.esquerdo-lp {
     width: 100%;
     height: 98vh;
     justify-content: center;
@@ -441,23 +440,23 @@ body {
     margin-top: 2vh;
 }
 
-.primeiro-esquerdo {
+.primeiro-esquerdo-lp {
     width: 95%;
     height: 100%;
     box-shadow: 0px 0px 0px;
 }
 
-.h1-esquerdo {
+.h1-esquerdo-lp {
     font-size: 3vh;
 }
 
-.segundo-esquerdo{
+.segundo-esquerdo-lp{
     width: 92%;
     height: 60%;
     overflow: scroll;
 }
 
-.p-esquerdo {
+.p-esquerdo-lp {
     font-size: 2.5vh;
     color: #fffafa;
     text-align: justify;
@@ -473,37 +472,37 @@ body {
     font-size: 2vh;
 }
 
-.meio {
+.meio-lp {
     width: 100%;
     height: 98vh;
     align-items: center;
     margin-top: 2vh;
 }
 
-.primeiro-meio {
+.primeiro-meio-lp {
     width: 95%;
     height: 32%;
     box-shadow: 0px 0px 0px;
 }
 
-.segundo-meio {
+.segundo-meio-lp {
     width: 95%;
     height: 32%;
     align-items: center;
 }
 
-.imagem-meio {
+.imagem-meio-lp {
     width: 50%;
     height: auto;
 }
 
-.terceiro-meio {
+.terceiro-meio-lp {
     width: 95%;
     height: 32%;
     box-shadow: 0px 0px 0px;
 }
 
-.direito {
+.direito-lp {
     width: 100%;
     height: 98vh;
     justify-content: center;
@@ -511,67 +510,67 @@ body {
     margin-top: 5vh;
 }
 
-.primeiro-direito {
+.primeiro-direito-lp {
     width: 95%;
     height: 100%;
     box-shadow: 0px 0px 0px;
 }
 
-.h1-direito {
+.h1-direito-lp {
     font-size: 2.8vh;
 }
 
-.segundo-direito {
+.segundo-direito-lp {
     width: 90%;
     height: 54%;
     margin-top: 3vh;
     overflow: scroll;
 }
 
-.segundo-direito li {
+.segundo-direito-lp li {
     font-size: 2.1vh;
     margin-left: -15px;
     line-height: 2.5vh;
 }
 
-.segundo-direito h2 {
+.segundo-direito-lp h2 {
     font-size: 2.2vh;
     margin: 0px;
     margin-top: 1vh;
     padding-left: 10px;
 }
 
-.segundo-direito a{
+.segundo-direito-lp a{
     font-size: 1.5vh;
     margin-left: 3px;
     padding-right: 1vh;
 }
 
-.imagem-grande {
+.imagem-grande-lp {
     margin-top: 7vh;
     width: 100%;
     height: 25%;
 }
 
-.title-mid {
+.title-mid-lp {
     font-size: 4vh;
     margin-top: 6vh;
 }
 
-.capa-mid {
+.capa-mid-lp {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.left {
+.left-lp {
     margin-top: 5vh;
     width: 100%;
     height: 98vh;
 }
 
-.primeiro-left  {
+.primeiro-left-lp {
     background-color: #fffafa;
     width: 90%;
     height: 100%;
@@ -579,7 +578,7 @@ body {
 }
 
 
-.terceiro-left, .terceiro-right, .terceiro-end {
+.terceiro-left-lp, .terceiro-right-lp, .terceiro-end-lp {
     background-color: black;
     width: 90%;
     height: 62%;
@@ -588,7 +587,7 @@ body {
     overflow: scroll;
 }
 
-.p-left, .p-right{
+.p-left-lp, .p-right-lp {
     font-size: 2.3vh;
     color: #fffafa;
     padding-left: 1.6vh;
@@ -597,20 +596,20 @@ body {
 }
 
 
-.right{
+.right-lp {
     width: 100%;
     height: 98vh;
     margin-top: 8vh;
 }
 
-.primeiro-right {
+.primeiro-right-lp {
     background-color: #fffafa;
     width: 90%;
     height: 100%;
     box-shadow: 0px 0px 0px rgb(254,80,0);
 }
 
-.end {
+.end-lp {
     display: flex;
     flex-direction: column;
     margin-top: 8vh;
@@ -618,14 +617,14 @@ body {
     height: 98vh;
 }
 
-.primeiro-end{
+.primeiro-end-lp {
     background-color: #fffafa;
     width: 90%;
     height: 100%;
     box-shadow: 0px 0px 0px rgb(254,80,0);
 }
 
-.p-end {
+.p-end-lp {
     font-size: 2.3vh;
     color: #fffafa;
     padding-left: 1.7vh;
@@ -633,7 +632,7 @@ body {
     margin-top: 1vh;
 }
 
-.title-end {
+.title-end-lp {
     font-size: 3.6vh;
     margin-top: 6vh;
     padding-left: 0px;
