@@ -6,9 +6,9 @@ var deleteUser = document.querySelectorAll('[id^="delete"]')
 var modalBox = document.getElementById('modal');
 var modalClose1 = document.querySelectorAll('[id^="cancelar"]')
 var modalX = document.querySelectorAll('[id^="modalClose"]')
-var modalNewUser = document.getElementById('modal-new-user');
-var modalManageUser = document.getElementById('modal-manage-user');
-var modalDeleteUser = document.getElementById('modal-delete-user');
+var modalNewUser = document.getElementById('modal-new-post');
+var modalManageUser = document.getElementById('modal-manage-post');
+var modalDeleteUser = document.getElementById('modal-delete-post');
 
 newUser.addEventListener('click', () => {manageModal('newUser')});
 
