@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400&family=Oswald:wght@200&display=swap");
+
+html,
+body {
+  height: 100%;
+  font-family: "Orbitron";
+  font-size: 24px;
+  background: linear-gradient(
+    136deg,
+    rgb(0, 0, 0) 0%,
+    hsl(19, 100%, 50%) 0%,
+    #000000 85%
+  );
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
+  font-size: 48px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  font-family: "Orbitron";
+  padding: 10px 20px;
+  background-color: #fe5000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+form button:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+form input[type="file"] {
+  font-family: "Orbitron";
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.container {
+  -webkit-text-stroke: 1px black;
+}
+
+#arquivo {
+  font-family: "Orbitron";
+  cursor: pointer;
+}
+
+.btnEscolher {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fe5000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+  border-radius: 4px;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+}
+
+.btnEscolher:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+#arquivo {
+  display: none;
+}
+
+input {
+  background-color: #fffafa;
+}
+
+#conteudo
+{
+    background-color: #fffafa;
+}
