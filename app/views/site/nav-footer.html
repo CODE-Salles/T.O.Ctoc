@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../public/css/nav-footer.css">
+    <link rel="stylesheet" href="../../../public/css/reset.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+
+            <div class="navbar-menu">
+                <button class="navbar-menu-button" id="navbar-menu-button" onclick="openMenu('navbar-links')">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-links" id="navbar-links">
+                <a href="" class="navbar-link">
+                    <div class="navbar-link-icon"></div>
+                    <div class="navbar-link-text">Todos os Posts</div>
+                </a>
+
+                <a href="" class="navbar-link">
+                    <div class="navbar-link-icon"></div>
+                    <div class="navbar-link-text">Minha Conta</div>
+                </a>
+            </div>
+
+            <a href="" id="navbar-logo">
+                <div class="navbar-logo-shadow"></div>
+            </a>
+
+            <div class="searchbox-menu">
+                <button class="searchbox-menu-button" id="searchbox-menu-button" onclick="openMenu('searchbox-form')">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <form class="searchbox-form" id="searchbox-form" method="post">
+                <div class="searchbox">
+                    <button class="searchbox-button" onclick="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input class="searchbox-input" type="search" placeholder="Pesquise por um post..." />
+                </div>
+            </form>
+        </nav>
+    </header>
+
+
+
+    <!-- <main class="fakecontent">
+        <div>
+            <button onclick="changePageColor('orange')">Laranja</button>
+            <button onclick="changePageColor('yellow')">Amarelo</button>
+            <button onclick="changePageColor('green')">Verde</button>
+        </div>
+    </main> -->
+
+
+    <footer class="footerbar" id="footerbar">
+        <div class="footerbar-column">
+            <img class="footerbar-logo" src="../../../public/assets/logo.png" alt="Blog Toc Toc Logo">
+            <p class="footer-signature">Code Jr 2014-2023.</p>
+        </div>
+        <div class="footerbar-column">
+            <h2>Mapa do site</h2>
+            <ul class="footerbar-links">
+                <li>
+                    <a class="footerbar-link" href="">Página Inicial</a>
+                </li>
+                <li>
+                    <a class="footerbar-link" href="">Todos os Posts</a>
+                </li>
+                <li>
+                    <a class="footerbar-link" href="">Minha conta</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footerbar-column">
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="propose-title">
+                <h2>Think outside the cube</h2>
+            </div>
+            <div class="propose-text">
+                <p>Eleve seu conceito de "pensamento fora da caixa" e incentive-se a desenvolver suas capacidades
+                    criativas, de tomada de decisão e possibilidades, crie a percepção de uma nova forma de pensar em
+                    problemas e soluções</p>
+            </div>
+            <i class="fa-solid fa-quote-right"></i>
+
+            <!-- <ul class="footerbar-links">
+                <li>
+                    <a class="footerbar-link" href="">Missão</a>
+                </li>
+                <li>
+                    <a class="footerbar-link" href="">Valores</a>
+                </li>
+                <li>
+                    <a class="footerbar-link" href="">Política e Privacidade</a>
+                </li>
+            </ul> -->
+        </div>
+
+        <div class="footerbar-column">
+            <h2>Siga-nos nas Redes Sociais</h2>
+            <div class="footerbar-socials">
+                <a class="footerbar-link-social" href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a class="footerbar-link-social" href=""><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                <a class="footerbar-link-social" href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a class="footerbar-link-social" href=""><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+            </div>
+            <button class="sharepage-button" id="sharepage-button">Compartilhe !</button>
+
+        </div>
+
+    </footer>
+
+    <script src="../../../public/js/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/5d993ad3fb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
