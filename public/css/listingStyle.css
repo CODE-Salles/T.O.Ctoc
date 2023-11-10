@@ -88,6 +88,8 @@ body {
     flex-direction: column;
     width: 100%;
     text-align: center;
+    margin-bottom: 1rem;
+
 }
 
 .d-table tbody tr,
