@@ -1,0 +1,236 @@
+body,html {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+
+.esquerda {
+    display: inline-block;
+    color: white;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+  
+}
+.welcome {
+    display: inline-block;
+    position: absolute;
+    width: 19%;
+    margin-top: 14%;
+    margin-left: 3%;
+    font-size: 30px;
+}
+.esquerda img {
+    margin-top: 180px;
+    width: 48%;
+    margin-left: 0px;
+}
+
+
+
+
+
+.direita {
+    display: inline-block;
+    background: rgb(0,0,0);
+    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 20%);
+    width: 50%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    vertical-align: top;
+}
+.direita div{
+    display: block;
+}
+
+
+
+
+.login {
+    font-size: 52px;
+    margin-top: 21%;
+    margin-left: 35%;
+    width: 32%;
+}
+
+
+
+
+.dados1 {
+    margin-top: 6%;
+    margin-left: 28%;
+    background-color: hwb(0 90% 100%);
+    border-radius: 12px;
+    width: 47%;
+    height: 6vh;
+}
+.dados1 input{
+    color: rgba(0, 0, 0, 0.50);
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 2%;
+    width: 90%;
+    font-family: 'Amethysta', serif;
+}
+.dados1 input::placeholder{
+    color: rgba(0, 0, 0, 0.50);
+}
+
+
+
+
+.dados2 {
+    margin-top: 4%;
+    margin-left: 28%;
+    background-color: hwb(0 90% 100%);
+    border-radius: 12px;
+    width: 47%;
+    height: 6vh;
+}
+.dados2 input{
+    color: rgba(0, 0, 0, 0.50);
+    border: none;
+    background: none;
+    outline: none;
+    margin-top: 2%;
+    font-size: 20px;
+    width: 90%;
+    font-family: 'Amethysta', serif;
+}
+.dados2 input::placeholder{
+    color: rgba(0, 0, 0, 0.50);
+}
+
+
+
+
+.senha {
+    color: rgba(255, 255, 255, 0.60);
+    margin-left: 28%;
+    text-align: left;
+    width: 40%;
+    font-size: 16px;
+    margin-top: 2%;
+    font-family: 'Amethysta', serif;
+    letter-spacing: 4px;
+}
+.senha a{
+    color: rgba(255, 255, 255, 0.60);
+    text-decoration: none;
+}
+
+
+.enter h2 {
+    position: absolute;
+    color:rgba(0, 0, 0, 0.6);
+    background-color: hwb(0 100% 30%);
+    margin-left: 18%;
+    margin-top: 4%;
+    font-size: 26px;
+    border-radius: 40px;
+    width: 16%;
+    height: 5%;
+    text-align: center;
+}
+.enter a{
+    color:rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+
+.sombra {
+    margin-top: 6%;
+    margin-left: 56%;
+    width: 44%;
+    height: 36vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(320deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 48%);
+}
+
+@media only screen and (max-width: 700px){
+
+.esquerda img {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 29%;
+    width: 40%;
+}
+
+.esquerda {
+    width: 0%;
+    height: 0%;
+}
+
+
+.welcome {
+    font-size: 0px;
+}
+
+
+
+.login{
+    font-size: 36px;
+    margin-top: 100%;
+    margin-left: 62%;
+}
+
+
+
+.dados1{
+    height: 5vh;
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 55%;
+}
+.dados1 input{
+    font-size: 16px;
+    
+}
+
+
+
+.dados2{
+    height: 5vh;
+    width: 90%;
+    margin-top: 12%;
+    margin-left: 55%;
+}
+.dados2 input{
+    font-size: 16px;
+}
+
+.senha{
+    width: 79%;
+    font-size: 12px;
+    margin-left: 55%;
+    letter-spacing: 3px;
+    margin-top: 5%;
+}
+
+
+.enter h2{
+    width: 30%;
+    font-size: 20px;
+    height: 5%;
+    margin-left: 35%;
+    margin-top: 15%;
+}
+
+.sombra {
+    height: 17vh;
+    width: 70%;
+    margin-top: 149%;
+    margin-left: 129%;
+}
+
+
+}
