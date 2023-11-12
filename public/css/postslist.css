@@ -1,0 +1,54 @@
+.d-table thead tr th:nth-child(1),
+.d-table tbody tr td:nth-child(1) {
+    width: 40%;
+}
+
+.d-table thead tr th:nth-child(2),
+.d-table tbody tr td:nth-child(2) {
+    width: 15%;
+}
+
+.d-table thead tr th:nth-child(3),
+.d-table tbody tr td:nth-child(3) {
+    width: 15%;
+}
+
+.d-table thead tr th:nth-child(4),
+.d-table tbody tr td:nth-child(4) {
+    width: 30%;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .desktop-listing {
+        width: 100%;
+    }
+
+    .d-table thead tr th:nth-child(1),
+    .d-table tbody tr td:nth-child(1) {
+        width: 34%;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .d-table thead tr th:nth-child(4),
+    .d-table tbody tr td:nth-child(4) {
+        width: 36%;
+    }
+
+    .d-table {
+        padding: 0 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .d-list-actions i {
+        display: none;
+    }
+
+
+    .d-list-actions {
+        gap: 2px;
+    }
+
+}
