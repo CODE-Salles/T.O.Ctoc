@@ -47,9 +47,11 @@ class UserController
             'password' => $_POST['password']
         ];
 
-        App::get('database')->edit('users', $_POST['id'], $parameters);
+        $id = $_POST['id'];
 
-        header['Location: /admin/usuarios'];
+        App::get('database')->edit('users', $id, $parameters);
+
+        header('Location: /admin/usuarios');
     }
 }
 

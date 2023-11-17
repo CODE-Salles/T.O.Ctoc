@@ -64,22 +64,24 @@ class QueryBuilder
 
     }
 
-    public function edit($table, $id, $parametros)
+    public function edit($table, $id, $parameters)
     {
         $sql = sprintf(
             'UPDATE %s SET %s WHERE %s',
             $table,
-            implode(', ', array_map(function ($parametros) {
-                return "($parametros) = :($parametros)";
-            }, array_keys($parametros))),
+            implode(', ', array_map(function ($parameters) {
+                return "$parameters = :$parameters";
+            }, 
+            array_keys($parameters))),
             'id = :id'
         );
 
-        $parametros['id'] = $id;
+        $parameters['id'] = $id;
 
         try {
             $stmt = $this->pdo->prepare($sql);
-            $stmt->execute($parametros);
+
+            $stmt->execute($parameters);
 
         } catch (Exception $e) {
             die($e->getMessage());
