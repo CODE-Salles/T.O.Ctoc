@@ -7,26 +7,57 @@ body,main{
   justify-content: center;
 }
 
+header,footer{
+  width: 100%;
+}
+
 body{
+  width: 100%;
   font-family: 'Orbitron';
   background-color: #1B1B1B;
   font-size: 16px;
 }
 
 
-.barra_pesquisa,.search-container{
+.barra_pesquisa,.search-container,.search-form{
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-container{
+  width: 80%;
+  position: relative;
+
 }
 
 .barra_pesquisa{
+  width: 100%;
+
   margin-bottom: 20px;
-  margin-top: 12px;
+  margin-top: 2rem;
+  position: relative;
+
+}
+
+.search-form{
+  width: 100%;
+  position: relative;
+}
+
+.search-form button{
+  right: 0;
+  position: absolute;
+  color: white;
+  background-color: black;
+
+  height: 100%;
+  width: 50px;
 }
 
 #searchInput {
-  width: 80%;
+  width: 100%;
   padding: 12px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
   border-radius: 4px;
@@ -89,10 +120,12 @@ body{
 
 .postSection{
   display: flex;
-  flex: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+
+  padding: 0 8%;
 
 }
 
@@ -111,6 +144,7 @@ body{
   gap: 12px;
 
   width: 25%; 
+  flex-grow: 1;
   
   background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
   background-color: #fe5000;
@@ -142,6 +176,44 @@ body{
   cursor: pointer;
   box-shadow: 0px 0px 10px 1px rgba(102, 102, 102, 0.52);
 
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.pagination-box-link{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+}
+
+.pagination-box-link:hover{
+  background-color: rgb(202, 134, 98);
+}
+
+.pagination-box-link--active{
+  background-color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 767px) {
