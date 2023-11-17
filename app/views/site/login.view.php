@@ -61,7 +61,7 @@
                         } 
                      ?> 
             </p>
-				<h><a href="http://127.0.0.1:5500/app/views/site/landing_page.html">Esqueceu sua senha?</a></h>
+				<h><a href=" ">Esqueceu sua senha?</a></h>
 			</div>
 
 			<div class="enter">
