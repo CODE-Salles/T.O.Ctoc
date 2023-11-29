@@ -61,7 +61,6 @@
                         } 
                      ?> 
             </p>
-				<h><a href=" ">Esqueceu sua senha?</a></h>
 			</div>
 
 			<div class="enter">
