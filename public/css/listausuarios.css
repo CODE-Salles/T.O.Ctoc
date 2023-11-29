@@ -286,6 +286,10 @@ button.green{
         display: none;
     }
 
+    .accordion-header{
+        padding-left: 0;
+    }
+    
     .mobile-listing {
         display: flex;
         flex-direction: column;
