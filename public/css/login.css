@@ -129,23 +129,21 @@ body,html {
 }
 
 
-.enter h2 {
-    position: absolute;
+.enter button {
+    margin-top:30px;
     color:rgba(0, 0, 0, 0.6);
     background-color: hwb(0 100% 30%);
-    margin-left: 18%;
-    margin-top: 4%;
     font-size: 26px;
     border-radius: 40px;
-    width: 16%;
-    height: 5%;
+    width: 45%;
+    height: 8%;
     text-align: center;
 }
-.enter a{
-    color:rgba(0, 0, 0, 0.6);
-    text-decoration: none;
-}
 
+.enter button:hover{
+    background-color: hwb(0 37% 63%);
+    cursor: pointer;
+}
 
 .sombra {
     margin-top: 6%;
