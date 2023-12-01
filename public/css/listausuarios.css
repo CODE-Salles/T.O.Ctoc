@@ -1,3 +1,15 @@
+:root {
+    --preto: #000000;
+    --amarelo: #ffd700;
+    --amarelo-claro: #dad09a;
+    --vermelho: #b60c2f;
+    --verde: #009a44;
+    --azul: #003da5;
+    --laranja: #fe5000;
+    --branco: #ffffff;
+    --primary-color: black;
+}
+
 body{
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,12,0,1) 0%, rgba(23,8,0,1) 65%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
@@ -84,19 +96,19 @@ td{
 }
 
 button.yellow{
+    margin-left: -3px;
     border-radius: 3px;
-    margin-left: -1%;
     background-color:  #009a44;
 }
 
 button.green{
-    height: 36px;
-    margin-left: -1%;
+    height: 38px;
+    margin-left: -3px;
     background-color: #ffd700;
 }
 
 button.red{
-    margin-left: -1%;
+    margin-left: -4px;
     background-color: #b50c2f;
 }
 
@@ -118,7 +130,7 @@ tbody{
 
 
 .icon{
-    width: 33px;
+    width: 38px;
     border-radius: 4px;
     margin-left: 3%;
 }
@@ -194,7 +206,7 @@ footer{
 
 .modal-form{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 20px;
@@ -218,14 +230,12 @@ footer{
 
 .modal-footer{
     background-color: inherit;
-    text-align: right;
-    padding: 0 20px;
 }
 
-.del{
-    text-align: center;
-}
 
+.mobile-listing{
+    display: none;
+}
 
 @media only screen and (max-width: 700px){
 
@@ -235,7 +245,7 @@ footer{
 }
 
 .tabela{
-    display:block;
+    display:none;
 }
 
 h2{
@@ -271,4 +281,43 @@ button.green{
     width: 90px;
     margin-left: 25px;
 }
+
+    .desktop-listing {
+        display: none;
+    }
+
+    .accordion-header{
+        padding-left: 0;
+    }
+    
+    .mobile-listing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .accordion_info_row .info{
+        overflow-x: scroll;
+    }
+
+    .mobile-listing h2{
+        margin: 0;
+    }
+
+    .table-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        background-color: var(--laranja);
+        border-radius: 6px;
+
+        padding: 1rem 0;
+        width: 90%;
+
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
 }
