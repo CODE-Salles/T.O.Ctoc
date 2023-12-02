@@ -25,6 +25,7 @@
             </form>
         </section>
 
+        <?php if (!isset($_GET['search'])) : ?>
         <section class="postSection">
             <div class="postPrincipal">
                 <img class="imagemPrincipal" src="https://i.pinimg.com/originals/88/6c/29/886c2938c5c01eb846092c4bc9bc789d.gif">
@@ -33,6 +34,7 @@
                 <p>Exploramos a origem, estrutura e características do icônico Cubo Mágico, também conhecido como Cubo de Rubik.</p>
             </div>
         </section>
+        <?php endif ;?>    
 
         <div id="postList">
             <section class="postSection">
@@ -40,11 +42,15 @@
                 <?php foreach ($posts as $key => $post) : ?>
 
 
-                    <div class="post">
+                    <div class="post" data-post-id="<?=$post->id?>">
                         <img class="imagemPadrao" src="../../../<?=$post->image?>">
                         <h2><?=$post->title?></h2>
                         <p>Data da Postagem: <?=$post->created_at?></p>
                         <p><?php echo substr($post->content, 0, 60) . "...";?></p>
+                        <form method="get" action="/postagens/post">
+                        <input type="hidden" name="id" value="<?=$post->id?>">
+                        <button type="submit" class="see-post-button">Saiba Mais!</button>
+                        </form>
                     </div>
 
                     <?php if ($key == 2) : ?>
@@ -55,7 +61,7 @@
                         </section>
                     <?php endif; ?>
 
-                <?php endforeach ?>
+                <?php endforeach ;?>
 
             </section>
         </div>
@@ -73,6 +79,7 @@
     </main>
 
     <?php require('app/views/site/footer.php'); ?>
+
 </body>
 
 </html>

@@ -1,3 +1,15 @@
+:root {
+    --preto: #000000;
+    --amarelo: #ffd700;
+    --amarelo-claro: #dad09a;
+    --vermelho: #b60c2f;
+    --verde: #009a44;
+    --azul: #003da5;
+    --laranja: #fe5000;
+    --branco: #ffffff;
+    --primary-color: black;
+}
+
 body,main{
     display: flex;
     flex-direction: column;
@@ -19,7 +31,7 @@ body{
     justify-content: center;
 
     padding: 1rem 0;
-    height: 90vh;
+    height: 100%;
     margin: 2rem 0;
 
 }
@@ -42,16 +54,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+
 
     font-family: 'Amethysta';
 
     width: 70%;
 
-    background-color: white;
+    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
     
     gap: 1rem;
     padding: 1rem 0.6rem;
-    box-shadow: 6px 5px 10px rgb(254,80,0);
+    box-shadow: 6px 5px 10px rgba(254, 80, 0, 0.568);
+
+    min-height: 600px;
 
     height: 100%;
 }
@@ -59,7 +75,7 @@ body{
 .lp-post-title{
     font-family: 'Orbitron';
     font-size: 1.5rem;
-
+    text-align: center;
 }
 
 .lp-post-img{
@@ -76,11 +92,14 @@ body{
     align-items: center;
 
     width: 90%;
-    height: 60%;
+    height: 100%;
+
+    gap: 1rem;
 
     box-sizing: border-box;
     border-radius: 4px;
     background-color: black;
+    box-shadow: 0px 0px 0px 3px rgb(165, 0, 0);
     color: white;
 
     padding: 0.8rem 0.4rem;
@@ -148,9 +167,10 @@ body{
 
 .special-card{
     width: 80%;
-    background-color: white;
+    background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
     padding: 1rem;
-    box-shadow: 6px 5px 10px rgb(254,80,0);
+    box-shadow: 6px 5px 10px rgba(254, 80, 0, 0.568);
+
 
 }
 
@@ -160,7 +180,7 @@ body{
     gap: 1rem;
     border-radius: 6px;
     padding: 1rem 1rem;
-    box-shadow: 0px 0px 0px 3px rgb(0, 61, 165);
+    box-shadow: 0px 0px 0px 3px rgb(165, 0, 0);
 }
 
 .lp-mid-section{
@@ -170,7 +190,7 @@ body{
     align-items: center;
 
     width: 100%;
-    background: url('../../../public/assets/Imagem cubo2.webp') no-repeat center/cover;
+    background: radial-gradient(circle, rgb(36, 32, 0) 0%, rgba(9, 9, 121, 0) 82%),url('../../../public/assets/Imagem cubo2.webp') no-repeat center/cover;
 
     text-align: center;
 
@@ -185,6 +205,73 @@ body{
     font-family: 'Orbitron';
 }
 
+.lp-post-date{
+    color: white;
+    font-family: 'Orbitron';
+
+}
+
+.button_readmore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_readmore a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .lp-first-section{
+        flex-wrap: wrap;
+    }
+
+    .lp-first-section .lp-column:nth-of-type(2){
+        width: 100%;
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .lp-first-section .lp-column:nth-of-type(1){
+        order: 2;
+        width: 50%;
+    }
+
+    .lp-first-section .lp-column:nth-of-type(3){
+        order: 3;
+
+        width: 50%;
+    }
+
+    .special-card{
+        width: 85%;
+    }
+
+    .lp-second-section .lp-column{
+        width: 32%;
+    }
+
+    .lp-second-section .lp-post{
+        width: 90%;
+        text-wrap: wrap;
+    }
+
+    .lp-post-title{
+        text-wrap: wrap;
+        font-size: 1rem;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lp-post-img{
+        height: 140px;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .lp-first-section,.lp-second-section{

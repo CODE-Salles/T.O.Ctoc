@@ -78,6 +78,15 @@
 
 
 @media only screen and (max-width: 767px) {
+
+    .sidebar{
+        position: absolute;
+        top: 15px;
+        left: 0px;
+        margin: 0;
+        background-color: transparent;
+    }
+
     .sidebar-button{
         border-bottom: none;
     }
@@ -98,10 +107,14 @@
 
     .sidebar-links-active{
         transition: 0.5s;
-        height: 160px;
+        height: 230px;
+        background-color: black;
+
     }
 
     .sidebar-button-active{
         border-bottom: 1px solid gray;
+        background-color: black;
+
     }
 }
