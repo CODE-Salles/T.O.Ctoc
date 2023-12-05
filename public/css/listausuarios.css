@@ -84,19 +84,19 @@ td{
 }
 
 button.yellow{
+    margin-left: -3px;
     border-radius: 3px;
-    margin-left: -1%;
     background-color:  #009a44;
 }
 
 button.green{
-    height: 36px;
-    margin-left: -1%;
+    height: 38px;
+    margin-left: -3px;
     background-color: #ffd700;
 }
 
 button.red{
-    margin-left: -1%;
+    margin-left: -4px;
     background-color: #b50c2f;
 }
 
@@ -118,7 +118,7 @@ tbody{
 
 
 .icon{
-    width: 33px;
+    width: 38px;
     border-radius: 4px;
     margin-left: 3%;
 }
