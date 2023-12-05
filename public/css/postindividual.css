@@ -2,7 +2,6 @@
 body {
     background-color: black;
     text-align: center;
-    background-image: url(../../public/assets/Formas.png);
     background-size:cover;
     background-repeat: no-repeat;
     font-family: 'Orbitron', sans-serif;
@@ -15,7 +14,7 @@ main{
     margin: 4rem 0;
 }
 .exemplo{
-    border-left: 37.077px solid rgba(254, 80, 0, 0.60);
+    /* border-left: 37.077px solid rgba(254, 80, 0, 0.60); */
     border-top-left-radius:30px ;
     border-bottom-left-radius: 30px;
     font-family: 'Orbitron', sans-serif;
