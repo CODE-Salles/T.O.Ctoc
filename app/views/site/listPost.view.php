@@ -25,14 +25,16 @@
             </form>
         </section>
 
+        <?php if (!isset($_GET['search'])) : ?>
         <section class="postSection">
             <div class="postPrincipal">
                 <img class="imagemPrincipal" src="https://i.pinimg.com/originals/88/6c/29/886c2938c5c01eb846092c4bc9bc789d.gif">
                 <h2>SOBRE O CUBO MÁGICO</h2>
-                <p>Data da Postagem: 16/10/2023</p>
+                <p class="post-date"><span>Data da Postagem:</span> <span>16/10/2023</span></p>
                 <p>Exploramos a origem, estrutura e características do icônico Cubo Mágico, também conhecido como Cubo de Rubik.</p>
             </div>
         </section>
+        <?php endif ;?>    
 
         <div id="postList">
             <section class="postSection">
@@ -40,11 +42,18 @@
                 <?php foreach ($posts as $key => $post) : ?>
 
 
-                    <div class="post">
+                    <div class="post" data-post-id="<?=$post->id?>">
                         <img class="imagemPadrao" src="../../../<?=$post->image?>">
                         <h2><?=$post->title?></h2>
-                        <p>Data da Postagem: <?=$post->created_at?></p>
-                        <p><?php echo substr($post->content, 0, 60) . "...";?></p>
+                        <p class="post-date">
+                            <span>Data da Postagem:</span>
+                            <span><?=$post->created_at?></span>
+                        </p>
+                        <p class="post-content"><?php echo substr($post->content, 0, 60) . "...";?></p>
+                        <form class="post-form" method="get" action="/postagens/post">
+                        <input type="hidden" name="id" value="<?=$post->id?>">
+                        <button type="submit" class="see-post-button">Saiba Mais!</button>
+                        </form>
                     </div>
 
                     <?php if ($key == 2) : ?>
@@ -55,7 +64,7 @@
                         </section>
                     <?php endif; ?>
 
-                <?php endforeach ?>
+                <?php endforeach ;?>
 
             </section>
         </div>
@@ -73,6 +82,24 @@
     </main>
 
     <?php require('app/views/site/footer.php'); ?>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var postDivs = document.querySelectorAll('.post');
+
+            postDivs.forEach(function (postDiv) {
+                postDiv.addEventListener('click', function () {
+                    // Find the corresponding form within the clicked post
+                    var form = postDiv.querySelector('.post-form');
+
+                    // Trigger a click event on the submit button within the form
+                    var submitButton = form.querySelector('.see-post-button');
+                    submitButton.click();
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

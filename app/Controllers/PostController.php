@@ -12,7 +12,7 @@ class PostController
     {
         $posts = App::get('database')->selectAll('posts');
         $users = App::get('database')->selectAll('users');
-        return view('admin/posts_list', compact('posts','users'));
+        return view('admin/listaposts', compact('posts','users'));
     }
 
     public function create()

@@ -13,7 +13,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Orbitron';
 }
 
 body {
@@ -197,8 +196,7 @@ body {
 }
 
 .fa-quote-right,.fa-quote-left{
-    position: absolute;
-    
+    position: absolute;  
 }
 .fa-quote-right{
     align-self: flex-end;
@@ -347,21 +345,34 @@ body {
         font-size: 12px;
     }
 
+    .navbar-col-left{
+        font-size: 0.7rem;
+        width: 32%;
+    }
+
     .footerbar {
         width: 100%;
-        gap: 0;
+        gap: 0.8rem;
         padding: 0 0.6em;
         padding-bottom: 1em;
     }
 
-    .footerbar-column:not(:first-child) {
-        width: 30%;
-    }
-
     .footerbar-column:first-child {
         width: 20%;
+        align-items: center;
+        justify-content: center;
     }
 
+    .footerbar-column:nth-child(2) {
+        width: 25%;
+     }
+
+    .footerbar-column:nth-child(3) {
+        width: 25%;
+       padding: 0;
+       justify-content: center;
+       text-align: center;
+    }
     .footerbar-column:last-child {
         gap: 0;
     }
@@ -381,6 +392,17 @@ body {
     .footerbar-link-social {
         width: 20%;
         padding: 0em;
+    }
+
+    .fa-quote-right,.fa-quote-left{
+        display: none !important;  
+    }
+
+    .icon-art{
+        display: none;
+    }
+    .propose-text{
+        display: none;
     }
 }
 

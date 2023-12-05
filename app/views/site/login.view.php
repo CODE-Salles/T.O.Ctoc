@@ -17,6 +17,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Amethysta&display=swap" rel="stylesheet">
+	<script src="../../../../public/js/listausuarios.js" defer></script>
 </head>
 
 
@@ -41,12 +42,14 @@
 
 		<form action="login" method="post">
 			<div class="dados1">
-				<input type="text" name="email" id="email" placeholder="Email">
+				<input type="email" name="email" id="email" placeholder="Email" required>
 			</div>
 
 			<div class="dados2">
-				<input type="password" name="password" id="password" placeholder="Senha">
+    		<input type="password" name="password" id="password" placeholder="Senha" required>
+   		    <img src="../../../../public/assets/olho.png" alt="Mostrar Senha" id="eye-icon" onclick="togglePassword()">
 			</div>
+
 
 			
 			<div class="senha">
@@ -58,7 +61,6 @@
                         } 
                      ?> 
             </p>
-				<h><a href="#">Esqueceu sua senha?</a></h>
 			</div>
 
 			<div class="enter">
@@ -69,6 +71,21 @@
 		</div>
 
 	</div>
+	
+	<script>
+    function togglePassword() {
+        var passwordInput = document.getElementById("password");
+        var eyeIcon = document.getElementById("eye-icon");
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            eyeIcon.src = "../../../../public/assets/olho.png"; 
+        } else {
+            passwordInput.type = "password";
+            eyeIcon.src = "../../../../public/assets/olho (fechado).png";
+        }
+    }
+	</script>
 
 
 

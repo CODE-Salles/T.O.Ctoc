@@ -7,6 +7,7 @@ use App\Controllers\DashboardController;
 use App\Controllers\LoginController;
 use App\Controllers\LandingPageController;
 use App\Controllers\ListPostController;
+use App\Controllers\SinglePostController;
 use App\Core\Router;
 
     // Crud Users
@@ -29,6 +30,9 @@ use App\Core\Router;
 
     // List Posts
     $router->get('postagens', 'ListPostController@index');
+
+    //Sinlge Post
+    $router->get('postagens/post', 'SinglePostController@index');
 
     // Login Page
     $router->get('login', 'LoginController@index');

@@ -19,7 +19,7 @@
     </div>
 
     <div class="footerbar-column">
-        <i class="fa-solid fa-quote-left"></i>
+        <i class="icon-art fa-solid fa-quote-left"></i>
         <div class="propose-title">
             <h2>Think outside the cube</h2>
         </div>
@@ -28,7 +28,7 @@
                 criativas, de tomada de decisão e possibilidades, crie a percepção de uma nova forma de pensar em
                 problemas e soluções</p>
         </div>
-        <i class="fa-solid fa-quote-right"></i>
+        <i class="icon-art fa-solid fa-quote-right"></i>
     </div>
 
     <div class="footerbar-column">
@@ -39,7 +39,7 @@
             <a class="footerbar-link-social" href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
             <a class="footerbar-link-social" href=""><i class="fa-brands fa-x-twitter fa-lg"></i></a>
         </div>
-        <button class="sharepage-button" id="sharepage-button">Compartilhe !</button>
+        <button class="sharepage-button" onclick="copyToClipboard('toctoc.com.br')" id="sharepage-button">Compartilhe !</button>
 
     </div>
 

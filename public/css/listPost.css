@@ -5,6 +5,7 @@ body,main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 header,footer{
@@ -27,7 +28,7 @@ body{
 }
 
 .search-container{
-  width: 80%;
+  width: 85%;
   position: relative;
 
 }
@@ -107,7 +108,6 @@ body{
   background-position: center;
 
   width: 100%;
-  margin: 0 1rem;
   height: 200px;
 }
 
@@ -138,12 +138,14 @@ body{
 
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content:space-evenly;
   align-items: center;
   
   gap: 12px;
 
-  width: 25%; 
+  width: 30%; 
+
+  max-width: 30%;
   flex-grow: 1;
   
   background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
@@ -167,8 +169,11 @@ body{
 .imagemPadrao{
   width: 100%;
   min-height: 300px;
-  max-height: 300px;
-  
+  max-height: 300px; 
+}
+
+.post-content{
+  text-align: justify;
 }
 
 .post:hover, .postPrincipal:hover{
@@ -176,6 +181,20 @@ body{
   cursor: pointer;
   box-shadow: 0px 0px 10px 1px rgba(102, 102, 102, 0.52);
 
+}
+
+.see-post-button{
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-family: 'Orbitron';
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.see-post-button:hover{
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .pagination{
@@ -215,13 +234,47 @@ body{
   background-color: white;
   color: black;
 }
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .postSection{
+    padding: 0 4%;
+  }
+
+  .post{
+    max-width: 34%;
+  }
+
+  .post-date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post h2{
+    text-align: center;
+    height: 40px;
+  }
+
+  .post .imagemPadrao{
+    min-height: 180px;
+    max-height: 180px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
+
+  .search-container {
+    width: 83%;
+  }
   .postSection{
     gap: 12px;
     width: 100%;
   }
-  
+      
+  .postPrincipal {
+    width: 100%;
+  }
+
   #metadeTela{
     width: 100%;
     height: 100px;
