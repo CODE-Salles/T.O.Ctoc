@@ -33,6 +33,7 @@ class LoginController
             ] ;
             return view('site/login', $error);
         }
+
     }
 
     public function delete(){

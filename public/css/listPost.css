@@ -5,28 +5,60 @@ body,main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+header,footer{
+  width: 100%;
 }
 
 body{
+  width: 100%;
   font-family: 'Orbitron';
   background-color: #1B1B1B;
   font-size: 16px;
 }
 
 
-.barra_pesquisa,.search-container{
+.barra_pesquisa,.search-container,.search-form{
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-container{
+  width: 85%;
+  position: relative;
+
 }
 
 .barra_pesquisa{
+  width: 100%;
+
   margin-bottom: 20px;
-  margin-top: 12px;
+  margin-top: 2rem;
+  position: relative;
+
+}
+
+.search-form{
+  width: 100%;
+  position: relative;
+}
+
+.search-form button{
+  right: 0;
+  position: absolute;
+  color: white;
+  background-color: black;
+
+  height: 100%;
+  width: 50px;
 }
 
 #searchInput {
-  width: 80%;
+  width: 100%;
   padding: 12px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.52);
   border-radius: 4px;
@@ -76,7 +108,6 @@ body{
   background-position: center;
 
   width: 100%;
-  margin: 0 1rem;
   height: 200px;
 }
 
@@ -89,10 +120,12 @@ body{
 
 .postSection{
   display: flex;
-  flex: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+
+  padding: 0 8%;
 
 }
 
@@ -105,12 +138,15 @@ body{
 
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content:space-evenly;
   align-items: center;
   
   gap: 12px;
 
-  width: 25%; 
+  width: 30%; 
+
+  max-width: 30%;
+  flex-grow: 1;
   
   background: linear-gradient(136deg, rgb(0, 0, 0) 0%, hsl(19, 100%, 50%) 0%, #000000 90%);
   background-color: #fe5000;
@@ -133,8 +169,11 @@ body{
 .imagemPadrao{
   width: 100%;
   min-height: 300px;
-  max-height: 300px;
-  
+  max-height: 300px; 
+}
+
+.post-content{
+  text-align: justify;
 }
 
 .post:hover, .postPrincipal:hover{
@@ -144,12 +183,98 @@ body{
 
 }
 
+.see-post-button{
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-family: 'Orbitron';
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.see-post-button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.pagination-box-link{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+}
+
+.pagination-box-link:hover{
+  background-color: rgb(202, 134, 98);
+}
+
+.pagination-box-link--active{
+  background-color: white;
+  color: black;
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .postSection{
+    padding: 0 4%;
+  }
+
+  .post{
+    max-width: 34%;
+  }
+
+  .post-date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post h2{
+    text-align: center;
+    height: 40px;
+  }
+
+  .post .imagemPadrao{
+    min-height: 180px;
+    max-height: 180px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+
+  .search-container {
+    width: 83%;
+  }
   .postSection{
     gap: 12px;
     width: 100%;
   }
-  
+      
+  .postPrincipal {
+    width: 100%;
+  }
+
   #metadeTela{
     width: 100%;
     height: 100px;

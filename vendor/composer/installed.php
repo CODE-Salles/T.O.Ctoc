@@ -3,7 +3,15 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '457abbf2a894adfce74e01b5ec6c603ebf98aeb6',
+<<<<<<< HEAD
+        'reference' => '9cd22dd3bbac37e8e7715d953dff398062e85bda',
+=======
+<<<<<<< HEAD
+        'reference' => 'ff62a8ca3957615f09e3d86e627fc54116262347',
+=======
+        'reference' => 'eeddfbeb3edff2480e47c548ec17c34311652bb3',
+>>>>>>> lista_usuarios_admin
+>>>>>>> Back-plus-front
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,16 +21,22 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '457abbf2a894adfce74e01b5ec6c603ebf98aeb6',
+            'reference' => 'eeddfbeb3edff2480e47c548ec17c34311652bb3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'phpmailer/phpmailer' => array(
-            'pretty_version' => 'v6.5.3',
-            'version' => '6.5.3.0',
-            'reference' => 'baeb7cde6b60b1286912690ab0693c7789a31e71',
+<<<<<<< HEAD
+            'pretty_version' => 'v6.8.1',
+            'version' => '6.8.1.0',
+            'reference' => 'e88da8d679acc3824ff231fdc553565b802ac016',
+=======
+            'pretty_version' => 'v6.9.1',
+            'version' => '6.9.1.0',
+            'reference' => '039de174cd9c17a8389754d3b877a2ed22743e18',
+>>>>>>> Back-plus-front
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpmailer/phpmailer',
             'aliases' => array(),

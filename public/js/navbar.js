@@ -18,27 +18,8 @@ function navBarClassChange() {
 
 function openMenu(element) {
     // let button = document.getElementById('navbar-menu-button');
-    let menu = document.getElementById(element);
-
     let navbar = document.getElementById('navbar-links')
-    let searchbox = document.getElementById('searchbox-form')
-
-    if(element == 'navbar-links'){
-        if(searchbox.classList.contains('active')){
-            searchbox.classList.toggle('active');
-        }
-    }
-
-
-    if(element == 'searchbox-form'){
-        if(navbar.classList.contains('active')){
-            navbar.classList.toggle('active');
-        }
-    }
-
-    console.log(menu.classList)
-    menu.classList.toggle('active');
-    
+    navbar.classList.toggle('active');    
 }
 
 function changePageColor(layout){
@@ -65,4 +46,14 @@ function changePageColor(layout){
       break;
     default:
   }
+}
+
+function copyToClipboard(text) {
+  var textarea = document.createElement('textarea');
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  alert('Compartilhe com seus amigos: \n' + text + '\nLink copiado');
 }

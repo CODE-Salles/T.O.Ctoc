@@ -9,6 +9,33 @@
     --branco: #ffffff;
     --primary-color: black;
 }
+textarea {
+    resize: vertical;
+  }
+
+
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
 
 body{
     background: rgb(0,0,0);
@@ -71,12 +98,23 @@ td{
 
 .botoes{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    gap: 1rem;
+
     justify-content: center;
     align-items: center;
+
     height: 50px;
 }
 
 .button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
     border-style: none;
     height: 38px;
     font-size: 16px;
@@ -126,13 +164,9 @@ tbody{
 }
 
 
-
-
-
 .icon{
     width: 38px;
     border-radius: 4px;
-    margin-left: 3%;
 }
 
 
@@ -148,6 +182,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
     top:0;
     left:0;
     width: 100%;
@@ -181,16 +216,20 @@ footer{
     display: flex;
     position: relative;
     justify-content: center;
-    height: 70px;
+
     line-height: 40px;
     font-size: 1rem;
 }
 .modal-header.deleteuser{
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .modal-close{
     position: absolute;
     right: 0;
+    top: 0;
     display: block;
     width: 40px;
     height: 40px;
@@ -207,9 +246,15 @@ footer{
 .modal-form{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+
     gap: 20px;
     padding: 0 20px;
+}
+
+.modal-form img{
+    width: 30%;
 }
 
 .modal-field{
@@ -220,6 +265,10 @@ footer{
     box-shadow: 0 0 2px black;
     padding: 0 10px;
     font-size:1rem;
+}
+
+.post-content {
+    height: auto;
 }
 
 .modal-field:focus{
@@ -237,11 +286,19 @@ footer{
     display: none;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .button span{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
 
 
-.icon{
-    width: 0%;
+.button span{
+    display: none;
 }
 
 .tabela{

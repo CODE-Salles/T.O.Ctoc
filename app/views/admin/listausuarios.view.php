@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <?php require('app/views/admin/sidebar.php'); ?>
     <div class="topo">
         <img src="../../../../public/assets/logo.png" class="logo" alt="Logo">
     </div>
@@ -49,12 +50,12 @@
                             <td><?= $user->email ?></td>
                             <td>
                                 <div class="botoes">
-                                    <img src="../../../../public/assets/visualizar.png" class="icon" alt="VisualizarIcon">
-                                    <button type="button" class="button yellow" id="action-show-user-<?= $user->id ?>">Visualizar</button>
-                                    <img src="../../../../public/assets/editar.png" class="icon" alt="EditIcon">
-                                    <button type="button" class="button green" id="action-edit-user-<?= $user->id ?>">Editar</button>
-                                    <img src="../../../../public/assets/excluir.png" class="icon" alt="DeleteIcon">
-                                    <button type="button" class="button red" id="action-delete-user-<?= $user->id ?>">Excluir</button>
+                                    
+                                    <button type="button" class="button yellow" id="action-show-user-<?= $user->id ?>"><img src="../../../../public/assets/visualizar.png" class="icon" alt="VisualizarIcon"><span>Visualizar</span></button>
+                                    
+                                    <button type="button" class="button green" id="action-edit-user-<?= $user->id ?>"><img src="../../../../public/assets/editar.png" class="icon" alt="EditIcon"><span>Editar</span></button>
+                                    
+                                    <button type="button" class="button red" id="action-delete-user-<?= $user->id ?>"><img src="../../../../public/assets/excluir.png" class="icon" alt="DeleteIcon"><span>Excluir</span></button>
                                 </div>
                             </td>
                         </tr>
@@ -113,7 +114,7 @@
                     <h2>Novo Usuário</h2>
                     <span class="modal-close" id="action-modalClose">&#10006;</span>
                 </div>
-                <form id="form" class="modal-form" method="POST" action="/admin/create">
+                <form id="form" class="modal-form" method="POST" action="/admin/users/create">
                     <input type="text" id="name" name="name" data-index="new" class="modal-field" placeholder="nome" required>
                     <input type="email" id="email" name="email" class="modal-field" placeholder="e-mail" required>
                     <input type="password" id="password" name="password" class="modal-field" placeholder="password" required>
@@ -131,7 +132,7 @@
                         <h2>Tem certeza que deseja excluir <?= $user->name ?> ?</h2>
                         <span class="modal-close" id="action-modalClose">&#10006;</span>
                     </div>
-                    <form id="form" class="modal-form" method="POST" action="/admin/delete">
+                    <form id="form" class="modal-form" method="POST" action="/admin/users/delete">
                         <input type="hidden" name="id" value="<?= $user->id ?>" />
                         <div class="modal-footer del">
                             <button id="salvar" class="button yellow">Confirmar</button>
@@ -145,7 +146,7 @@
                         <h2>Editar Usuário</h2>
                         <span class="modal-close" id="action-modalClose">&#10006;</span>
                     </div>
-                    <form id="form" class="modal-form" method="POST" action="/admin/edit">
+                    <form id="form" class="modal-form" method="POST" action="/admin/users/edit">
                         <input type="text" id="name" name="name" data-index="new" class="modal-field" placeholder="nome" value="<?= $user->name ?>" required>
                         <input type="email" id="email" name="email" class="modal-field" placeholder="e-mail" value="<?= $user->email ?>" required>
                         <input type="password" id="password" name="password" class="modal-field" placeholder="password" value="<?= $user->password ?>" required>

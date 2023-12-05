@@ -27,7 +27,7 @@ class UserController
 
         app::get('database')->insert('users', $parameters);
 
-        header('Location: /admin/usuarios');
+        header('Location: /admin/users');
     }
 
     public function delete()
@@ -36,7 +36,7 @@ class UserController
 
         App::get('database')->delete('users', $id);
 
-        header('Location: /admin/usuarios');
+        header('Location: /admin/users');
     }
 
     public function edit()
@@ -51,7 +51,7 @@ class UserController
 
         App::get('database')->edit('users', $id, $parameters);
 
-        header('Location: /admin/usuarios');
+        header('Location: /admin/users');
     }
 }
 
