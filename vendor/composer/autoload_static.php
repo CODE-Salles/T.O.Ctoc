@@ -26,19 +26,12 @@ class ComposerStaticInit440f3ed4841de68fd162e857f252896f
 
     public static $classMap = array (
         'App\\Controllers\\DashboardController' => __DIR__ . '/../..' . '/app/Controllers/DashboardController.php',
-<<<<<<< HEAD
-=======
         'App\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Controllers/ExampleController copy.php',
->>>>>>> Back-plus-front
         'App\\Controllers\\LandingPageController' => __DIR__ . '/../..' . '/app/Controllers/LandingPageController.php',
         'App\\Controllers\\ListPostController' => __DIR__ . '/../..' . '/app/Controllers/ListPostController.php',
         'App\\Controllers\\LoginController' => __DIR__ . '/../..' . '/app/Controllers/LoginController.php',
         'App\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Controllers/PostController.php',
-<<<<<<< HEAD
-        'App\\Controllers\\SinglePostController' => __DIR__ . '/../..' . '/app/Controllers/SinglePostController copy.php',
-=======
         'App\\Controllers\\SinglePostController' => __DIR__ . '/../..' . '/app/Controllers/SinglePostController.php',
->>>>>>> Back-plus-front
         'App\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Controllers/UserController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
