@@ -34,10 +34,10 @@
     <div class="footerbar-column">
         <h2>Siga-nos nas Redes Sociais</h2>
         <div class="footerbar-socials">
-            <a class="footerbar-link-social" href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
-            <a class="footerbar-link-social" href=""><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-            <a class="footerbar-link-social" href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
-            <a class="footerbar-link-social" href=""><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+            <a class="footerbar-link-social" href="https://www.instagram.com/codejr/"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a class="footerbar-link-social" href="https://api.whatsapp.com/send/?phone=553182293024&text=Tenho+interesse+no+sistema+EJ&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+            <a class="footerbar-link-social" href="https://www.instagram.com/codejr/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a class="footerbar-link-social" href="https://codejr.com.br/"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
         </div>
         <button class="sharepage-button" onclick="copyToClipboard('toctoc.com.br')" id="sharepage-button">Compartilhe !</button>
 
