@@ -10,10 +10,10 @@
                 <a class="footerbar-link" href="">Página Inicial</a>
             </li>
             <li>
-                <a class="footerbar-link" href="">Todos os Posts</a>
+                <a class="footerbar-link" href="http://localhost:9000/postagens">Todos os Posts</a>
             </li>
             <li>
-                <a class="footerbar-link" href="">Minha conta</a>
+                <a class="footerbar-link" href="http://localhost:9000/login">Minha conta</a>
             </li>
         </ul>
     </div>
