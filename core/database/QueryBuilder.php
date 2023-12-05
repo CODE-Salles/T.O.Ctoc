@@ -99,7 +99,6 @@ class QueryBuilder
     
     function login($table, $email, $password)
     {
-<<<<<<< HEAD
         $sql = sprintf('SELECT * FROM %s WHERE email = :email', $table);
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(':email', $email);
@@ -110,40 +109,6 @@ class QueryBuilder
             return true;
         } else {
             return false;
-=======
-        $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)', $table, implode(', ', array_keys($parameters)), ':' .implode(', :', array_keys($parameters)));
-
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute($parameters);
-
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    }
-
-    public function edit($table, $id, $parameters)
-    {
-        $sql = sprintf(
-            'UPDATE %s SET %s WHERE %s',
-            $table,
-            implode(', ', array_map(function ($parameters) {
-                return "{$parameters} = :{$parameters}";
-            }, 
-            array_keys($parameters))),
-            'id = :id'
-        );
-
-        $parameters['id'] = $id;
-
-        try {
-            $stmt = $this->pdo->prepare($sql);
-
-            $stmt->execute($parameters);
-
-        } catch (Exception $e) {
-            die($e->getMessage());
->>>>>>> cb324a18cf93f17b9067447fdafe8773d7212bdf
         }
     }
 
@@ -164,19 +129,4 @@ class QueryBuilder
         }
     }
 
-    function login($table, $email, $password)
-    {
-        $sql = sprintf('SELECT * FROM %s WHERE email = :email', $table);
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->bindParam(':email', $email);
-        $stmt->execute();
-        $user = $stmt->fetch();
-
-        if ($user && $password == $user['password']) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    
 }
