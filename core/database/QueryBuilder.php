@@ -96,8 +96,21 @@ class QueryBuilder
         }
     }
 
-    public function insert($table, $parameters)
+    
+    function login($table, $email, $password)
     {
+<<<<<<< HEAD
+        $sql = sprintf('SELECT * FROM %s WHERE email = :email', $table);
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        $user = $stmt->fetch();
+
+        if ($user && $password == $user['password']) {
+            return true;
+        } else {
+            return false;
+=======
         $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)', $table, implode(', ', array_keys($parameters)), ':' .implode(', :', array_keys($parameters)));
 
         try {
@@ -130,6 +143,7 @@ class QueryBuilder
 
         } catch (Exception $e) {
             die($e->getMessage());
+>>>>>>> cb324a18cf93f17b9067447fdafe8773d7212bdf
         }
     }
 

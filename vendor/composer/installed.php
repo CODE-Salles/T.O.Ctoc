@@ -21,15 +21,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-<<<<<<< HEAD
-            'reference' => '9cd22dd3bbac37e8e7715d953dff398062e85bda',
-=======
-<<<<<<< HEAD
-            'reference' => 'ff62a8ca3957615f09e3d86e627fc54116262347',
-=======
             'reference' => 'eeddfbeb3edff2480e47c548ec17c34311652bb3',
->>>>>>> lista_usuarios_admin
->>>>>>> Back-plus-front
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
