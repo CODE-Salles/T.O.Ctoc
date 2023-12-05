@@ -7,7 +7,7 @@
         <h2>Mapa do site</h2>
         <ul class="footerbar-links">
             <li>
-                <a class="footerbar-link" href="">Página Inicial</a>
+                <a class="footerbar-link" href="http://localhost:9000/">Página Inicial</a>
             </li>
             <li>
                 <a class="footerbar-link" href="http://localhost:9000/postagens">Todos os Posts</a>
