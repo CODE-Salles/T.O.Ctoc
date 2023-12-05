@@ -50,12 +50,12 @@
                             <td><?= $user->email ?></td>
                             <td>
                                 <div class="botoes">
-                                    <img src="../../../../public/assets/visualizar.png" class="icon" alt="VisualizarIcon">
-                                    <button type="button" class="button yellow" id="action-show-user-<?= $user->id ?>">Visualizar</button>
-                                    <img src="../../../../public/assets/editar.png" class="icon" alt="EditIcon">
-                                    <button type="button" class="button green" id="action-edit-user-<?= $user->id ?>">Editar</button>
-                                    <img src="../../../../public/assets/excluir.png" class="icon" alt="DeleteIcon">
-                                    <button type="button" class="button red" id="action-delete-user-<?= $user->id ?>">Excluir</button>
+                                    
+                                    <button type="button" class="button yellow" id="action-show-user-<?= $user->id ?>"><img src="../../../../public/assets/visualizar.png" class="icon" alt="VisualizarIcon"><span>Visualizar</span></button>
+                                    
+                                    <button type="button" class="button green" id="action-edit-user-<?= $user->id ?>"><img src="../../../../public/assets/editar.png" class="icon" alt="EditIcon"><span>Editar</span></button>
+                                    
+                                    <button type="button" class="button red" id="action-delete-user-<?= $user->id ?>"><img src="../../../../public/assets/excluir.png" class="icon" alt="DeleteIcon"><span>Excluir</span></button>
                                 </div>
                             </td>
                         </tr>

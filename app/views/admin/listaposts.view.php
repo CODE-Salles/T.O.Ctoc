@@ -56,12 +56,12 @@
                             <td><?= $post->created_at ?></td>
                             <td>
                                 <div class="botoes">
-                                    <img src="../../../../public/assets/visualizar.png" class="icon" alt="VisualizarIcon">
-                                    <button type="button" class="button yellow" id="action-show-post-<?= $post->id ?>">Visualizar</button>
-                                    <img src="../../../../public/assets/editar.png" class="icon" alt="EditIcon">
-                                    <button type="button" class="button green" id="action-edit-post-<?= $post->id ?>">Editar</button>
-                                    <img src="../../../../public/assets/excluir.png" class="icon" alt="DeleteIcon">
-                                    <button type="button" class="button red" id="action-delete-post-<?= $post->id ?>">Excluir</button>
+                                    
+                                    <button type="button" class="button yellow" id="action-show-post-<?= $post->id ?>"><img src="../../../../public/assets/visualizar.png" class="icon" alt="VisualizarIcon"><span>Visualizar</span></button>
+                                    
+                                    <button type="button" class="button green" id="action-edit-post-<?= $post->id ?>"><img src="../../../../public/assets/editar.png" class="icon" alt="EditIcon"><span>Editar</span></button>
+                    
+                                    <button type="button" class="button red" id="action-delete-post-<?= $post->id ?>"><img src="../../../../public/assets/excluir.png" class="icon" alt="DeleteIcon"><span>Excluir</span></button>
                                 </div>
                             </td>
                         </tr>

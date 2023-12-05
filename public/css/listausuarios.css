@@ -98,12 +98,23 @@ td{
 
 .botoes{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    gap: 1rem;
+
     justify-content: center;
     align-items: center;
+
     height: 50px;
 }
 
 .button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
     border-style: none;
     height: 38px;
     font-size: 16px;
@@ -156,7 +167,6 @@ tbody{
 .icon{
     width: 38px;
     border-radius: 4px;
-    margin-left: 3%;
 }
 
 
@@ -278,8 +288,8 @@ footer{
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
 
-    .icon{
-        width: 0;
+    .button span{
+        display: none;
     }
 
 }
@@ -287,8 +297,8 @@ footer{
 @media only screen and (max-width: 767px){
 
 
-.icon{
-    width: 0%;
+.button span{
+    display: none;
 }
 
 .tabela{
