@@ -7,13 +7,13 @@
         <h2>Mapa do site</h2>
         <ul class="footerbar-links">
             <li>
-                <a class="footerbar-link" href="http://localhost:9000/">Página Inicial</a>
+                <a class="footerbar-link" href="/">Página Inicial</a>
             </li>
             <li>
-                <a class="footerbar-link" href="http://localhost:9000/postagens">Todos os Posts</a>
+                <a class="footerbar-link" href="/postagens">Todos os Posts</a>
             </li>
             <li>
-                <a class="footerbar-link" href="http://localhost:9000/login">Minha conta</a>
+                <a class="footerbar-link" href="/login">Minha conta</a>
             </li>
         </ul>
     </div>
