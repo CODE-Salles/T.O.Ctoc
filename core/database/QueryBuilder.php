@@ -96,19 +96,40 @@ class QueryBuilder
         }
     }
 
-    
-    function login($table, $email, $password)
+    public function insert($table, $parameters)
     {
-        $sql = sprintf('SELECT * FROM %s WHERE email = :email', $table);
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->bindParam(':email', $email);
-        $stmt->execute();
-        $user = $stmt->fetch();
+        $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)', $table, implode(', ', array_keys($parameters)), ':' .implode(', :', array_keys($parameters)));
 
-        if ($user && $password == $user['password']) {
-            return true;
-        } else {
-            return false;
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($parameters);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function edit($table, $id, $parameters)
+    {
+        $sql = sprintf(
+            'UPDATE %s SET %s WHERE %s',
+            $table,
+            implode(', ', array_map(function ($parameters) {
+                return "{$parameters} = :{$parameters}";
+            }, 
+            array_keys($parameters))),
+            'id = :id'
+        );
+
+        $parameters['id'] = $id;
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute($parameters);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
         }
     }
 
@@ -125,8 +146,23 @@ class QueryBuilder
 
             $statement->execute(compact('id'));
         } catch (Exception $e) {
-            die(header('Location: /admin/error'));
+            return $e->getMessage();
         }
     }
 
+    function login($table, $email, $password)
+    {
+        $sql = sprintf('SELECT * FROM %s WHERE email = :email', $table);
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        $user = $stmt->fetch();
+
+        if ($user && $password == $user['password']) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
 }

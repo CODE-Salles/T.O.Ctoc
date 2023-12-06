@@ -37,7 +37,10 @@ class ListPostController
         }
     
         $total_pages = ceil($rows_count / $itens_per_page);
-        return view('site/listPost', compact('posts','page','total_pages'));
+        $fixed = App::get('database')->selectAll('highlights');
+        $fixed = $fixed[0]->mainpost;
+        $mainpost = App::get('database')->selectById($fixed, 'posts');
+        return view('site/listPost', compact('posts','page','total_pages','mainpost'));
     }
 
 }

@@ -29,9 +29,13 @@
         <section class="postSection">
             <div class="postPrincipal">
                 <img class="imagemPrincipal" src="https://i.pinimg.com/originals/88/6c/29/886c2938c5c01eb846092c4bc9bc789d.gif">
-                <h2>SOBRE O CUBO MÁGICO</h2>
-                <p class="post-date"><span>Data da Postagem:</span> <span>16/10/2023</span></p>
-                <p>Exploramos a origem, estrutura e características do icônico Cubo Mágico, também conhecido como Cubo de Rubik.</p>
+                <h2><?=$mainpost[0]->title?></h2>
+                <p class="post-date"><span>Data da Postagem:</span> <span><?=$mainpost[0]->created_at?></span></p>
+                <p><?php echo substr($mainpost[0]->content, 0, 120) . "...";?></p>
+                <form class="post-form" method="get" action="/postagens/post">
+                        <input type="hidden" name="id" value="<?=$mainpost[0]->id?>">
+                        <button type="submit" class="see-post-button">Saiba Mais!</button>
+                </form>
             </div>
         </section>
         <?php endif ;?>    
@@ -41,7 +45,7 @@
 
                 <?php foreach ($posts as $key => $post) : ?>
 
-
+                    <?php if ($post->id != 25) : ?>
                     <div class="post" data-post-id="<?=$post->id?>">
                         <img class="imagemPadrao" src="../../../<?=$post->image?>">
                         <h2><?=$post->title?></h2>
@@ -55,7 +59,7 @@
                         <button type="submit" class="see-post-button">Saiba Mais!</button>
                         </form>
                     </div>
-
+                    <?php endif ;?>
                     <?php if ($key == 2) : ?>
                         <section id="metadeTela">
                             <div class="container">

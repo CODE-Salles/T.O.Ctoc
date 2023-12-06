@@ -10,11 +10,25 @@ class UserController
 
     public function index()
     {
-        $usuarios = App::get('database')->selectAll('users');
-        $tables =[
-            'usuarios' => $usuarios,
-        ];
-        return view('admin/listausuarios', $tables);
+        session_start();
+        if($_SESSION['logado']){
+            $usuarios = App::get('database')->selectAll('users');
+            $error = null;
+            if (isset($_SESSION['error_message'])) {
+                $error = $_SESSION['error_message'];
+                // Limpe a mensagem de erro da sessão para que ela não persista após o recarregamento da página
+                unset($_SESSION['error_message']);
+            }
+    
+
+            $tables =[
+                'usuarios' => $usuarios,
+                'error' => $error,
+            ];
+            return view('admin/listausuarios', $tables);
+        }else{
+            header('Location: /');           
+        }
     }
 
     public function create()
@@ -33,10 +47,23 @@ class UserController
     public function delete()
     {
         $id = $_POST['id'];
-
-        App::get('database')->delete('users', $id);
-
+        $database = App::get('database');
+    
+        $error = $database->delete('users', $id);
+    
+        if ($error) {
+            // Armazene a mensagem de erro na sessão
+            session_start();
+            $_SESSION['error_message'] = 'Não é possível deletar este usuário, verifique se há algum post atrelado a ele';
+    
+            // Redirecione para evitar reenvio do formulário e exibir a mensagem de erro
+            header('Location: /admin/users');
+            exit();
+        }
+    
+        // Se não houver erro, redirecione normalmente
         header('Location: /admin/users');
+        exit();
     }
 
     public function edit()

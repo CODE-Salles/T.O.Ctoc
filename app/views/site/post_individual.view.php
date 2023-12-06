@@ -9,6 +9,7 @@
 
         <title><?=$posts[0]->title?></title>
         <link rel="stylesheet" href="../../../public/css/postIndividual.css">
+        <link rel="stylesheet" href="../../../public/css/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
         <?php
             $cores = [
@@ -29,8 +30,8 @@
 
 
         <style>
-        .exemplo{
-            border-left: 37.077px solid <?=$cor['border']?>;
+        .conteudo{
+            border-color: <?=$cor['border']?>;
         }
 
         body{
@@ -44,7 +45,7 @@
        <?php require('app/views/site/navbar.php'); ?>
 
        <main> 
-            <div class="direita exemplo">
+            <div class="conteudo">
                 <div class="titulos">
                 
                     <h2>Think outside the cube</h2>
@@ -59,7 +60,9 @@
                         <?=$posts[0]->content?>
                     </h3>
                 </div>
+
             </div>
+
         </main>
         <?php require('app/views/site/footer.php'); ?>
     </body>

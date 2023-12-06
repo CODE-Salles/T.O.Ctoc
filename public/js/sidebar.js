@@ -7,7 +7,7 @@ function openSidebar(){
 
     links.classList.toggle('sidebar-links-active');
     sidebar_button.classList.toggle('sidebar-button-active');
-    for(i=0; i<5; i++){
+    for(i=0; i<6; i++){
        contents[i].classList.toggle('sidebar-link-content-active');
     }
 }

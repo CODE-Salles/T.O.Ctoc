@@ -35,11 +35,7 @@ class SMTP
      *
      * @var string
      */
-<<<<<<< HEAD
-    const VERSION = '6.8.1';
-=======
     const VERSION = '6.9.1';
->>>>>>> Back-plus-front
 
     /**
      * SMTP line break constant.
@@ -200,8 +196,6 @@ class SMTP
         'Haraka' => '/[\d]{3} Message Queued \((.*)\)/',
         'ZoneMTA' => '/[\d]{3} Message queued as (.*)/',
         'Mailjet' => '/[\d]{3} OK queued as (.*)/',
-<<<<<<< HEAD
-=======
     ];
 
     /**
@@ -214,7 +208,6 @@ class SMTP
      */
     public static $xclient_allowed_attributes = [
         'NAME', 'ADDR', 'PORT', 'PROTO', 'HELO', 'LOGIN', 'DESTADDR', 'DESTPORT'
->>>>>>> Back-plus-front
     ];
 
     /**
