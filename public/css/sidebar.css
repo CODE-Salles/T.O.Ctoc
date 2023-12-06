@@ -1,6 +1,6 @@
 
 .sidebar{
-    position: absolute;
+    position: fixed;
     font-family: 'Orbitron';
     font-size: 0.8rem;
     top: 10px;
@@ -80,7 +80,7 @@
 @media only screen and (max-width: 767px) {
 
     .sidebar{
-        position: absolute;
+        position: fixed;
         top: 15px;
         left: 0px;
         margin: 0;
@@ -107,7 +107,7 @@
 
     .sidebar-links-active{
         transition: 0.5s;
-        height: 230px;
+        height: 270px;
         background-color: black;
 
     }

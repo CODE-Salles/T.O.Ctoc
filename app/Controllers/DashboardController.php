@@ -10,7 +10,13 @@ class DashboardController
 
     public function index()
     {
-        return view('admin/dashboard');
+        session_start();
+        if($_SESSION['logado']){
+            $posts = App::get('database')->selectAll('highlights');
+            return view('admin/dashboard', compact('posts'));
+        }else{
+            header('Location: /');
+        }
     }
 }
 

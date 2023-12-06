@@ -8,6 +8,7 @@ use App\Controllers\LoginController;
 use App\Controllers\LandingPageController;
 use App\Controllers\ListPostController;
 use App\Controllers\SinglePostController;
+use App\Controllers\HighLightsController;
 use App\Core\Router;
 
     // Crud Users
@@ -24,6 +25,10 @@ use App\Core\Router;
 
     //Dashboard Page
     $router->get('admin', 'DashboardController@index');
+
+    //Posts definidos
+    $router->get('admin/highlights', 'HighLightsController@index');
+    $router->post('admin/highlights/edit', 'HighLightsController@edit');
 
     // Lading Page
     $router->get('', 'LandingPageController@index');

@@ -39,13 +39,14 @@
 
                 <?php foreach ($posts as $key => $post) : ?>
 
-
+                    <?php if ($post->id != 25) : ?>
                     <div class="post">
                         <img class="imagemPadrao" src="../../../<?=$post->image?>">
                         <h2><?=$post->title?></h2>
                         <p>Data da Postagem: <?=$post->created_at?></p>
                         <p><?php echo substr($post->content, 0, 60) . "...";?></p>
                     </div>
+                    <?php endif; ?>
 
                     <?php if ($key == 2) : ?>
                         <section id="metadeTela">

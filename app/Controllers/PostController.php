@@ -10,9 +10,14 @@ class PostController
 
     public function index()
     {
-        $posts = App::get('database')->selectAll('posts');
-        $users = App::get('database')->selectAll('users');
-        return view('admin/listaposts', compact('posts','users'));
+        session_start();
+        if($_SESSION['logado']){
+            $posts = App::get('database')->selectAll('posts');
+            $users = App::get('database')->selectAll('users');
+            return view('admin/listaposts', compact('posts','users'));
+        }else{
+            header('Location: /');
+        }
     }
 
     public function create()

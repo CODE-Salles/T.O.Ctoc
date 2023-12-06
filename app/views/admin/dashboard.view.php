@@ -9,10 +9,9 @@
 
 </head>
 <body>
-    
     <div class="capa-dashboard">
+
         <div class="esquerdo-dashboard">
-            
             <button class="primeiro-dashboard"><a href="/" class="link-button">Página Inicial</a></button>
 
             <button class="segundo-dashboard"><a href="admin/posts" class="link-button">Gerenciar Publicações</a></button>
@@ -21,12 +20,14 @@
 
             <form action="logout" method="get"><button class="quarto-dashboard" type="submit">Sair</button></form>
 
+            <button class="primeiro-dashboard"><a href="admin/highlights" class="link-button">Posts Fixos</a></button>
+
+
         </div>
         
         <div class="direito-dashboard">
             <img class="imagem-dashboard" src="../../../public/assets/toctoc.png">
         </div>
     </div>
-
 </body>
 </html>

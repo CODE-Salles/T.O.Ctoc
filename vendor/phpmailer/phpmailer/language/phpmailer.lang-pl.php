@@ -18,23 +18,16 @@ $PHPMAILER_LANG['file_open']            = 'Nie można otworzyć pliku: ';
 $PHPMAILER_LANG['from_failed']          = 'Następujący adres nadawcy jest nieprawidłowy lub nie istnieje: ';
 $PHPMAILER_LANG['instantiate']          = 'Nie można wywołać funkcji mail(). Sprawdź konfigurację serwera.';
 $PHPMAILER_LANG['invalid_address']      = 'Nie można wysłać wiadomości, ' . 'następujący adres odbiorcy jest nieprawidłowy lub nie istnieje: ';
-<<<<<<< HEAD
-=======
 $PHPMAILER_LANG['invalid_header']       = 'Nieprawidłowa nazwa lub wartość nagłówka';
 $PHPMAILER_LANG['invalid_hostentry']    = 'Nieprawidłowy wpis hosta: ';
 $PHPMAILER_LANG['invalid_host']         = 'Nieprawidłowy host: ';
->>>>>>> Back-plus-front
 $PHPMAILER_LANG['provide_address']      = 'Należy podać prawidłowy adres email odbiorcy.';
 $PHPMAILER_LANG['mailer_not_supported'] = 'Wybrana metoda wysyłki wiadomości nie jest obsługiwana.';
 $PHPMAILER_LANG['recipients_failed']    = 'Błąd SMTP: Następujący odbiorcy są nieprawidłowi lub nie istnieją: ';
 $PHPMAILER_LANG['signing']              = 'Błąd podpisywania wiadomości: ';
-<<<<<<< HEAD
-$PHPMAILER_LANG['smtp_connect_failed']  = 'Wywołanie funkcji SMTP Connect() zostało zakończone niepowodzeniem.';
-=======
 $PHPMAILER_LANG['smtp_code']            = 'Kod SMTP: ';
 $PHPMAILER_LANG['smtp_code_ex']         = 'Dodatkowe informacje SMTP: ';
 $PHPMAILER_LANG['smtp_connect_failed']  = 'Wywołanie funkcji SMTP Connect() zostało zakończone niepowodzeniem.';
 $PHPMAILER_LANG['smtp_detail']          = 'Szczegóły: ';
->>>>>>> Back-plus-front
 $PHPMAILER_LANG['smtp_error']           = 'Błąd SMTP: ';
 $PHPMAILER_LANG['variable_set']         = 'Nie można ustawić lub zmodyfikować zmiennej: ';

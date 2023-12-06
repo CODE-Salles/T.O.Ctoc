@@ -23,6 +23,11 @@
             <div class="sidebar-link-content ">Lista de Usuários</div>
         </a>
 
+        <a href="/admin/highlights" class="sidebar-link">
+            <div class="sidebar-link-icon"><i class="fa-solid fa-thumbtack"></i></div>
+            <div class="sidebar-link-content ">Posts Fixos</div>
+        </a>
+
         <a href="/logout" class="sidebar-link">
             <div class="sidebar-link-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
             <div class="sidebar-link-content ">Logout</div>

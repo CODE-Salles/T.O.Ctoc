@@ -358,10 +358,6 @@ class PHPMailer
     public $AuthType = '';
 
     /**
-<<<<<<< HEAD
-     * An implementation of the PHPMailer OAuthTokenProvider interface.
-     *
-=======
      * SMTP SMTPXClient command attibutes
      *
      * @var array
@@ -371,7 +367,6 @@ class PHPMailer
     /**
      * An implementation of the PHPMailer OAuthTokenProvider interface.
      *
->>>>>>> Back-plus-front
      * @var OAuthTokenProvider
      */
     protected $oauth;
@@ -762,11 +757,7 @@ class PHPMailer
      *
      * @var string
      */
-<<<<<<< HEAD
-    const VERSION = '6.8.1';
-=======
     const VERSION = '6.9.1';
->>>>>>> Back-plus-front
 
     /**
      * Error severity: message only, continue processing.
@@ -1587,12 +1578,6 @@ class PHPMailer
 
             //Validate From, Sender, and ConfirmReadingTo addresses
             foreach (['From', 'Sender', 'ConfirmReadingTo'] as $address_kind) {
-<<<<<<< HEAD
-                $this->{$address_kind} = trim($this->{$address_kind});
-                if (empty($this->{$address_kind})) {
-                    continue;
-                }
-=======
                 if ($this->{$address_kind} === null) {
                     $this->{$address_kind} = '';
                     continue;
@@ -1601,7 +1586,6 @@ class PHPMailer
                 if (empty($this->{$address_kind})) {
                     continue;
                 }
->>>>>>> Back-plus-front
                 $this->{$address_kind} = $this->punyencodeAddress($this->{$address_kind});
                 if (!static::validateAddress($this->{$address_kind})) {
                     $error_message = sprintf(

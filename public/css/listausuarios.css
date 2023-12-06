@@ -43,6 +43,15 @@ body{
     font-family: 'Orbitron', sans-serif;
 }
 
+
+.sqlError{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .topo{
     display: flex;
     justify-content: center;
@@ -62,6 +71,15 @@ body{
     margin-left: -70px;
 }
 
+.sqlError span{
+    background-color: rgba(255, 255, 255, 0.318);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    color: rgb(166, 0, 0);
+
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
 
 .tabela{
     display: flex;
@@ -91,10 +109,14 @@ tbody tr:nth-child(even) {
 
 
 td{
-    padding-left: 20px;
+    padding: 0 1rem;
+    text-align: center;
+
 }
 
-
+.pl-autor,.pl-date{
+    white-space: nowrap;
+}
 
 .botoes{
     display: flex;
@@ -278,6 +300,8 @@ footer{
 
 
 .modal-footer{
+    display: flex;
+    gap: 1rem;
     background-color: inherit;
 }
 
@@ -311,11 +335,11 @@ h2{
 }
 
 .modal-header{
-    padding-left: 15px;
+ 
     height: 120px;
 }
 .modal-content{
-    width: 250px;
+    width: 100%;
 }
 .modal-header.new-user{
     text-align: center;

@@ -49,11 +49,11 @@
                     <?php foreach ($posts as $key => $post) : ?>
                         <tr>
                             <td><?= $post->title ?></td>
-                            <td><?php foreach ($users as $user):
+                            <td class="pl-autor"><?php foreach ($users as $user):
                                 if ($user->id == $post->author)
                                     echo $user->name; endforeach; ?>
                             </td>
-                            <td><?= $post->created_at ?></td>
+                            <td class="pl-date"><?= $post->created_at ?></td>
                             <td>
                                 <div class="botoes">
                                     

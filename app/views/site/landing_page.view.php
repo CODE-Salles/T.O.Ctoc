@@ -35,20 +35,45 @@
             </div>
 
             <div class="lp-column">
+
                 <div class="special-card">
                     <div class="special-card-bg">
-                        <button class="lp-button"><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Utilidades do cubo</a></button>
-                        <button class="lp-button"><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Variações do Cubo</a></button>    
+
+                        <form method="get" action="/postagens/post">
+                            <input type="hidden" value="<?=$fixed['first'][0]->id?>" name="id">
+                            <button type="submit"  class="lp-button">
+                            <?=$fixed['first'][0]->title?>
+                            </button>
+                        </form>
+
+                        <form method="get" action="/postagens/post">
+                            <input type="hidden" value="<?=$fixed['second'][0]->id?>" name="id">
+                            <button type="submit"  class="lp-button">
+                            <?=$fixed['second'][0]->title?>
+                            </button>
+                        </form>
+
                     </div>
                 </div>
+
                 <div class="image-card">
                     <img class="middle-image" src="../../../public/assets/toctoc.png">
                 </div>
 
                 <div class="special-card">
                     <div class="special-card-bg">
-                        <button class="lp-button"><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Dicas para resolver</a></button>
-                        <button class="lp-button"><a href="https://www2.ufjf.br/cat/servicos/graduacao/aproveitamento-de-estudos/" target="_blank">Mais curiosidades</a></button>
+                    <form method="get" action="/postagens/post">
+                            <input type="hidden" value="<?=$fixed['third'][0]->id?>" name="id">
+                            <button type="submit"  class="lp-button">
+                            <?=$fixed['third'][0]->title?>
+                            </button>
+                        </form>
+                        <form method="get" action="/postagens/post">
+                            <input type="hidden" value="<?=$fixed['fourth'][0]->id?>" name="id">
+                            <button type="submit"  class="lp-button">
+                            <?=$fixed['fourth'][0]->title?>
+                            </button>
+                        </form>
                     </div>    
                 </div>
             </div>
@@ -127,6 +152,7 @@
 
     <div class="button_readmore">
         <a href="/postagens">Ler mais!</a>
+        <span><i class="fa-solid fa-angles-down"></i></span>
     </div>
 
     </main>

@@ -33,6 +33,13 @@
             <button type="button" class="button blue mobile" id="action-new-user">Cadastrar Usuário</button>
         </div>
 
+        <?php 
+            if (isset($error)){
+            echo '<div class="sqlError"><span>'. $error . '</span></div>';
+            }
+
+        ?>
+      
         <div class="tabela">
             <table>
                 <thead>

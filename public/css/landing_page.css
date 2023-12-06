@@ -54,7 +54,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 
     font-family: 'Amethysta';
@@ -74,7 +74,8 @@ body{
 
 .lp-post-title{
     font-family: 'Orbitron';
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -118,7 +119,7 @@ body{
 
     text-align: justify;
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .lp-button{
@@ -163,6 +164,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.special-card form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .special-card{
@@ -213,14 +222,44 @@ body{
 
 .button_readmore{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 10%;
+
+    margin: 0 auto;
+
+    margin-bottom: 1rem;
+}
+
+.button_readmore:hover{
+    cursor: pointer;
+    transition: all 0.4s;
+    transform: scale(1.05);
 }
 
 .button_readmore a{
+    background-color: var(--laranja);
+    white-space: nowrap;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-family: 'Orbitron';
     text-decoration: none;
+    font-size: 1.2rem;
     color: white;
+    z-index: 2;
+}
+
+.button_readmore span{
+    margin-top: -2rem;
+    z-index: 1;
+    background-color: var(--laranja);
+    padding: 2rem 1rem 0.6rem 1rem;
+    border-radius: 50%;
+}
+
+.button_readmore span i{
+    z-index: 2;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -249,18 +288,23 @@ body{
         width: 85%;
     }
 
+    .lp-second-section{
+        gap: 1rem;
+        padding: 0 0.4rem;
+    }
+
     .lp-second-section .lp-column{
         width: 32%;
     }
 
     .lp-second-section .lp-post{
-        width: 90%;
+        width: 100%;
         text-wrap: wrap;
     }
 
     .lp-post-title{
         text-wrap: wrap;
-        font-size: 1rem;
+        font-size: 0.8rem;
         height: 30px;
         display: flex;
         flex-direction: column;
@@ -270,6 +314,16 @@ body{
 
     .lp-post-img{
         height: 140px;
+        min-height: 140px;
+        max-height: 140px;
+    }
+
+    .lp-post-desc{
+        font-size: 1.2rem;
+
+        height: 230px;
+
+        overflow: hidden;
     }
 }
 
@@ -295,6 +349,10 @@ body{
     .lp-post-desc{
         font-size: 1rem;
         margin-bottom: 5px;
+    }
+
+    .special-card{
+        width: 90%;
     }
 
     .special-card-bg button{
