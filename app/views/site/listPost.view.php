@@ -28,7 +28,7 @@
         <?php if (!isset($_GET['search'])) : ?>
         <section class="postSection">
             <div class="postPrincipal">
-                <img class="imagemPrincipal" src="https://i.pinimg.com/originals/88/6c/29/886c2938c5c01eb846092c4bc9bc789d.gif">
+                <img class="imagemPrincipal" src="<?=$mainpost[0]->image?>">
                 <h2><?=$mainpost[0]->title?></h2>
                 <p class="post-date"><span>Data da Postagem:</span> <span><?=$mainpost[0]->created_at?></span></p>
                 <p><?php echo substr($mainpost[0]->content, 0, 120) . "...";?></p>
